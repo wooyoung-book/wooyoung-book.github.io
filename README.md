@@ -4,5 +4,5 @@
 - [2024.08](Book/2024.08.md)
 
 ## Music
-음악 기록(Ambient, Chillout ...)
+음악(Ambient, Chillout ...)
 - [2024.08](Music/2024.08.md)
