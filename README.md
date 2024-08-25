@@ -1,4 +1,3 @@
-# wooyoung-book.github.io
 
 ## Menu
 
