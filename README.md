@@ -1,5 +1,5 @@
 
 ## Menu
 
-- [Book](features.md)
-- [Music](limitations.md)
+- [Book](book.md)
+- [Music](music.md)
