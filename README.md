@@ -7,3 +7,6 @@
 ## Music
 음악(Ambient, Instrumental ...)
 - [2024.08~](Music/2024.08~.md)
+
+## Video
+- [2024.09~](Video/2024.09~.md)
