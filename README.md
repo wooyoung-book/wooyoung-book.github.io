@@ -4,7 +4,7 @@
 ### [24.08](Book/24.08.md) &nbsp; [24.09](Book/24.09.md)
 
 ## Music
-Ambient, Instrumental ...
+Ambient, Instrumental, ...
 ### [24.08](Music/24.08.md) &nbsp; [24.09](Music/24.09.md)
 
 ## Video
