@@ -1,3 +1,11 @@
+모든 비밀에는 이름이 있다<sup id="57">[57](footnote.md#57)</sup> - 서미애
+
+마스터 마인드<sup id="56">[56](footnote.md#56)</sup> - 이성민
+
+클린 코드<sup id="55">[55](footnote.md#55)</sup> - 설혜원
+
+잘자요, 엄마<sup id="54">[54](footnote.md#54)</sup> - 서미애
+
 너와 나의 미스터리<sup id="53">[53](footnote.md#53)</sup> - 이재익
 
 냉면<sup id="52">[52](footnote.md#52)</sup> - 김유리, 범유진, dcdc, 전건우, 곽재식
