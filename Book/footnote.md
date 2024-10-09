@@ -1,7 +1,7 @@
 <a href="1" style="display: block; text-align: center; background-color: yellow;">
-  <b id="57">57.</b>
+  <b id="57">57.</b><br/>
 </a>
-<br/>
+
 현실감있는 감정선
 [↩](review.md#57)
 
