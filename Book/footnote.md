@@ -1,16 +1,16 @@
 
 <b id="57"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-57) 현실감있는 감정선
+[57] 현실감있는 감정선
 [↩](review.md#57)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-56) 액션스릴러, 빌런, 박진감 넘치는 영화같은
+[56] 액션스릴러, 빌런, 박진감 넘치는 영화같은
 [↩](review.md#56)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="55"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-55) 재미는 있으나 임팩트는 없었다.
+[55] 재미는 있으나 임팩트는 없었다.
 [↩](review.md#55)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
