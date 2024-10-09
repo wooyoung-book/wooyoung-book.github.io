@@ -1,7 +1,7 @@
 
 ## Book
 추미스/호러 책 기록, 한줄평(귀찮아서 대충적은)
-### [24.08](Book/24.08.md) &nbsp; [24.09](Book/24.09.md) &nbsp; [24.10](Book/24.10.md)
+### [review](Book/review.md)
 
 ## Music
 Ambient, Instrumental, ...
