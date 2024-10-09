@@ -1,3 +1,43 @@
+너와 나의 미스터리<sup id="53">[53](footnote.md#53)</sup> - 이재익
+
+냉면<sup id="52">[52](footnote.md#52)</sup> - 김유리, 범유진, dcdc, 전건우, 곽재식
+
+시체 옆에 피는 꽃<sup id="51">[51](footnote.md#51)</sup> - 공민철
+
+지옥문을 여는 방법<sup id="50">[50](footnote.md#50)</sup> - 권경희, 김경수, 김범석, 김재성, 김주동, 성성명, 양수련, 이상우, 한수경, 홍성호, 최종철, 조동신
+
+코미디는 끝났다<sup id="49">[49](footnote.md#49)</sup> - 이은
+
+당신의 별이 사라지던 밤<sup id="48">[48](footnote.md#48)</sup> - 서미애
+
+굿바이 마이 달링, 독거미 여인의 키스<sup id="47">[47](footnote.md#47)</sup> - 김재희, 김재성, 양수련, 조동신, 공민철, 김주동, 윤자영, 박상민, 정가일, 김범석
+
+미친 X들<sup id="46">[46](footnote.md#46)</sup> - 서미애, 송시우, 정해연, 홍선주, 이은영, 한새마
+
+나를 아는 남자<sup id="45">[45](footnote.md#45)</sup> - 도진기
+
+이상한 집<sup id="44">[44](footnote.md#44)</sup> - 우케쓰
+
+가토의 검<sup id="43">[43](footnote.md#43)</sup> - 김이수
+
+백일몽<sup id="42">[42](footnote.md#42)</sup> - 고을주
+
+미술관의 쥐<sup id="41">[41](footnote.md#41)</sup> - 이은
+
+네메시스의 단검<sup id="40">[40](footnote.md#40)</sup> - 이정훈
+
+곰탕1&2<sup id="39">[39](footnote.md#39)</sup> - 김영탁
+
+붉은 상자<sup id="38">[38](footnote.md#38)</sup> - 김정용
+
+블랙 아이스<sup id="37">[37](footnote.md#37)</sup> - 이수안
+
+어두운 물<sup id="36">[36](footnote.md#36)</sup> - 전건우
+
+칵테일, 러브, 좀비<sup id="35">[35](footnote.md#35)</sup> - 조예은
+
+불특정 다수<sup id="34">[34](footnote.md#34)</sup> - 염유창
+
 서울, 카타콤<sup id="33">[33](footnote.md#33)</sup> - 이봄
 
 계간미스터리 2023 겨울 호<sup id="32">[32](footnote.md#32)</sup> - 김새봄, 팩트스토리, 박광규, (이시무, 히라노 쥬, 김유철, 황세연, 장우석, 백휴), 김소망, 쥬한량, 계간미스터리 편집부
