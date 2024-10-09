@@ -1,7 +1,4 @@
 
-<b id="a"></b><br/><br/><b id="b"></b><br/><br/><b id="c"></b><br/><br/><b id="d"></b><br/><br/><b id="e"></b><br/><br/><b id="f"></b><br/><br/>
-
-
 <b id="57">57.</b><br/>
 현실감있는 감정선
 [↩](review.md#57)
