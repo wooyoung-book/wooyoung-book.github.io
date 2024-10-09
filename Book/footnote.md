@@ -59,7 +59,7 @@
 [↩](review.md#52)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<b id="45"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<b id="45"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 45. 때론 사소한 가능성이 실마리가 되기도 한다. 흐름이 지루하지 않았고 결말부분에 생각해둔 추리가 다 빗나가서 허탈했다. 다음편 계속.
 [↩](review.md#51)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
