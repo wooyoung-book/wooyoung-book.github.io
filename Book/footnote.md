@@ -1,32 +1,32 @@
 
 <b id="57"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-[57] 현실감있는 감정선
-[↩](review.md#57)
+57) 현실감있는 감정선
+[↩](review.md#a)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-[56] 액션스릴러, 빌런, 박진감 넘치는 영화같은
-[↩](review.md#56)
+56) 액션스릴러, 빌런, 박진감 넘치는 영화같은
+[↩](review.md#b)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="55"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-[55] 재미는 있으나 임팩트는 없었다.
-[↩](review.md#55)
+55) 재미는 있으나 임팩트는 없었다.
+[↩](review.md#c)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="54"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 54) 어떤 환경과 삶이 살인마를 만드는지에 대해 심리해부가 인상적
-[↩](review.md#54)
+[↩](review.md#d)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="53"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 53) 구성이 너무 좋아서 끊김없이 마음을 움직이는 굉장히 좋은 작품
-[↩](review.md#53)
+[↩](review.md#e)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="52"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 52) 냉면으로 특이한 기분을 느낄 수 있다. 마지막 파인애플 냉면은 한번쯤 먹어보고 싶다.
-[↩](review.md#52)
+[↩](review.md#f)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <b id="51"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
