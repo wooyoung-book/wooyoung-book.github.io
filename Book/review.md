@@ -1,7 +1,7 @@
 <details><summary>
 59. 모든 비밀에는 이름이 있다
-</summary><span style="font-size: 90%; background-color: #BDFCC9">
-**작가:** 서미애
+</summary><span style="font-size: 90%; background-color: #FFDAB9">
+작가: 서미애
 </span><br><span style="font-size: 90%; background-color: #e9ecef">
 리뷰: 현실감있는 감정선
 </span></details>
@@ -17,11 +17,12 @@
 
 <details><summary>
 57. 클린 코드 - 설혜원
-</summary>
+</summary><span style="font-size: 90%; background-color: #FFDAB9">
+작가: 설혜원
+</span><br><span style="font-size: 90%; background-color: #e9ecef">
+리뷰: 재미는 있으나 임팩트는 없었다.
+</span></details>
 
-> ↳&nbsp;
-재미는 있으나 임팩트는 없었다.
-</details>
 
 <details><summary>
 56. 잘자요, 엄마 - 서미애
