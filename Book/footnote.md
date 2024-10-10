@@ -6,9 +6,14 @@
 
 
 
-<div style="margin: 1000px">
-  my text here.
-</div>
+h1::before {
+    content: "jdjeie";
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    padding-top: 50%;
+}
 
 
 
