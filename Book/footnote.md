@@ -5,6 +5,13 @@
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
+
+<div align="center">
+  my text here.
+</div>
+
+
+
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 56) 액션스릴러, 빌런, 박진감 넘치는 영화같은
 <a href="javascript:history.back()">↩</a>
