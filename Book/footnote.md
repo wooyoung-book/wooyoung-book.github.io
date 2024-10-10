@@ -4,7 +4,7 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<pstyle="width: 100%; height: 100vh; overflow: auto;">
+<p style="width: 100%; height: 100vh; overflow: auto;">
 
 This heading will be centered
 </p>
