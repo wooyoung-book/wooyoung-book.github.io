@@ -4,6 +4,8 @@
 [↩](review.md#a)
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
+<a href="javascript:history.back()">Go Back</a>
+
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 56) 액션스릴러, 빌런, 박진감 넘치는 영화같은
 [↩](review.md#b)
