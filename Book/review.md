@@ -1,7 +1,7 @@
 <details><summary>
 모든 비밀에는 이름이 있다 - 서미애
-</summary><br>
-> 현실감있는 감정선
+</summary><
+현실감있는 감정선
 </details>
 
 <details><summary>
