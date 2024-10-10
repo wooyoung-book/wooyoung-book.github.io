@@ -1,15 +1,14 @@
-<details><summary>
+<span style="background-color: #FFFEBD"><details><summary>
 59. 모든 비밀에는 이름이 있다 - 서미애
-</summary><span style="background-color: #FFFEBD">
+</span></summary>
 현실감있는 감정선
-</span></details><br>
+</details>
 
 <details><summary>
 58. 마스터 마인드 - 이성민
 </summary><span style="background-color: #FFFEBD">&nbsp;
 액션스릴러, 빌런, 박진감 넘치는 영화같은
 </span></details>
-
 
 <details><summary>
 57. 클린 코드 - 설혜원
@@ -18,7 +17,6 @@
 > ↳&nbsp;
 재미는 있으나 임팩트는 없었다.
 </details>
-
 
 <details><summary>
 56. 잘자요, 엄마 - 서미애
