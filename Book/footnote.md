@@ -4,7 +4,7 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<p>
+<pre>
 
 
 
@@ -23,7 +23,7 @@ This heading will be centered
 
 
 
-</p>
+</pre>
 
 
 
