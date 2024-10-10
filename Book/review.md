@@ -2,7 +2,7 @@
 모든 비밀에는 이름이 있다 - 서미애
 </summary>
 현실감있는 감정선
-</details>
+<br></details>
 
 <details><summary>
 마스터 마인드 - 이성민
