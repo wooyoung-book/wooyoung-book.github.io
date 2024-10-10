@@ -4,25 +4,9 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<pre style="height: 100%; overflow: auto;">
-
-
-
-
-
-
-
-
-
+<pre style="width: 100%; height: 100%; overflow: auto;">
 
 This heading will be centered
-
-
-
-
-
-
-
 </pre>
 
 
