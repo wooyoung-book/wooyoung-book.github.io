@@ -1,5 +1,4 @@
-&nbsp; 1
-&emsp; -> Tab
+tab: &emsp;
 
 footnote example:
 <sup id="55">[55](footnote.md#55)</sup>
@@ -9,7 +8,21 @@ sfdlkfjskldfj
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
+dropdown:
+<details>
+<summary>How do I dropdown?</summary>
+
+This is how you dropdown.
+</details>
+
 pre scrollable:
 <pre style="width: 100%; height: 100%; overflow: auto;
 hggyguyguygyugu
 </pre>
+
+
+find&replace:
+exel - ctrl+h  - check wildcard
+
+concat:
+="12313"&A1&"sdfsdf" 
