@@ -8,3 +8,8 @@ footnote example:
 sfdlkfjskldfj
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+pre scrollable:
+<pre style="width: 100%; height: 100%; overflow: auto;
+hggyguyguygyugu
+</pre>
