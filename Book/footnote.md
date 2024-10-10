@@ -4,10 +4,10 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<pre style="width: 100%; height: 100vh; overflow: auto;">
+<pstyle="width: 100%; height: 100vh; overflow: auto;">
 
 This heading will be centered
-</pre>
+</p>
 
 
 
