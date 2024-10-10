@@ -4,7 +4,7 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<pre>
+<pre style="height: 100%; overflow: auto; white-space: normal;">
 
 
 
