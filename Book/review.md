@@ -1,6 +1,6 @@
-<details><summary><span style="background-color: #D3D3D3">
+<details><summary>
 59. 모든 비밀에는 이름이 있다
-</span></summary><span style="font-size: 90%">
+</summary><span style="font-size: 90%; background-color: #D3D3D3">
 작가: 서미애
 <br>
 리뷰: 현실감있는 감정선
