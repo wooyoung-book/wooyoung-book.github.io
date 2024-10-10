@@ -4,7 +4,7 @@
 footnote example:
 <sup id="55">[55](footnote.md#55)</sup>
 
-<b id="57"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<b id="55"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 sfdlkfjskldfj
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
