@@ -4,18 +4,26 @@
 <a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
+<p>
 
 
-h1::before {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    padding-top: 50%;
-}
 
-<h1>This heading will be centered</h1>
+
+
+
+
+
+
+
+This heading will be centered
+
+
+
+
+
+
+
+</p>
 
 
 
