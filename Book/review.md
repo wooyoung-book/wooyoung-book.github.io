@@ -1,6 +1,6 @@
-<details><summary>
+<details><summary><span style="font-size: 80%; background-color: #D3D3D3">
 59. 모든 비밀에는 이름이 있다 - 서미애
-</summary><span style="font-size: 80%; background-color: #FFFEBD"> ↳&nbsp;
+</span></summary> ↳&nbsp;
 현실감있는 감정선
 </span></details>
 
