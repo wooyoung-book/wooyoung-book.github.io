@@ -1,10 +1,9 @@
 
 <b id="57"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 57) 현실감있는 감정선
-[↩](review.md#a)
+<a href="javascript:history.back()">↩</a>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<a href="javascript:history.back()">Go Back</a>
 
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 56) 액션스릴러, 빌런, 박진감 넘치는 영화같은
