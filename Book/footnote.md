@@ -9,6 +9,13 @@
 This heading will be centeredhdhdhjdjejejejjrjdjdjdjjdjdjdjdjjdd
 </pre>
 
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+
 
 
 <b id="56"></b><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
