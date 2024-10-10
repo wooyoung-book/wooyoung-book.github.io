@@ -1,17 +1,15 @@
 <details><summary>
 59. 모든 비밀에는 이름이 있다 - 서미애
-</summary><span style="background-color: #FFFEBD">
-
-`현실감있는 감정선`
+</summary><span style="background-color: #FFFEBD">&nbsp;
+현실감있는 감정선
 </span></details>
 
 
 <details><summary>
 58. 마스터 마인드 - 이성민
-</summary><br>
-> ↳&nbsp;
+</summary><span style="background-color: #FFFEBD">&nbsp;
 액션스릴러, 빌런, 박진감 넘치는 영화같은
-</details>
+</span></details>
 
 
 <details><summary>
@@ -52,10 +50,9 @@
 
 <details><summary>
 53. 시체 옆에 피는 꽃 - 공민철
-</summary>
-
-`이야기가 매끄럽고 계속 읽고 싶게 만듬. 흡입력 있는 스토리가 없으면 중도에 그만두거나 마지막 반전을 기대하게 되는데 스토리가 재밌으니 반은 먹고 들어감.`
-</details>
+</summary><span style="background-color: #FFFEBD">&nbsp;
+이야기가 매끄럽고 계속 읽고 싶게 만듬. 흡입력 있는 스토리가 없으면 중도에 그만두거나 마지막 반전을 기대하게 되는데 스토리가 재밌으니 반은 먹고 들어감.`
+</span></details>
 
 <details><summary>
 52. 지옥문을 여는 방법 - 권경희, 김경수, 김범석, 김재성, 김주동, 성성명, 양수련, 이상우, 한수경, 홍성호, 최종철, 조동신
