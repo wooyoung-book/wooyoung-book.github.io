@@ -8,8 +8,7 @@
 
 <details><summary>
 58. 마스터 마인드 - 이성민
-</summary>
-
+</summary><br>
 > ↳&nbsp;
 액션스릴러, 빌런, 박진감 넘치는 영화같은
 </details>
