@@ -7,10 +7,13 @@
 </span></details>
 
 <details><summary>
-58. 마스터 마인드 - 이성민
-</summary><span style="background-color: #FFFEBD">&nbsp;
-액션스릴러, 빌런, 박진감 넘치는 영화같은
+58. 마스터 마인드
+</summary><span style="font-size: 90%; background-color: #FFDAB9">
+작가: 이성민
+</span><br><span style="font-size: 90%; background-color: #e9ecef">
+리뷰: 액션스릴러, 빌런, 박진감 넘치는 영화같은
 </span></details>
+
 
 <details><summary>
 57. 클린 코드 - 설혜원
