@@ -2,8 +2,7 @@
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
 서미애
-</span><br>리뷰: <pre>
-현실감있는 감정선
+</span><br>리뷰: <pre> 현실감있는 감정선
 </span></pre></span></details>
 
 <details><summary>58 <ins>
