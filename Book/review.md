@@ -1,4 +1,4 @@
-<details><summary>59&nsbp;<ins>
+<details><summary>59&nbsp;<ins>
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애
