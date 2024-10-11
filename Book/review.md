@@ -4,7 +4,7 @@
 서미애
 </span><br>리뷰: <pre>
 현실감있는 감정선
-</span></pre></span></details>
+</pre></span></details>
 
 <details><summary>58 <ins>
 마스터 마인드
