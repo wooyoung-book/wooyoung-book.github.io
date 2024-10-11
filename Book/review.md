@@ -1,6 +1,6 @@
 <details><summary>59 <ins>
 모든 비밀에는 이름이 있다
-</ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
+</ins></summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
 </span><br>리뷰: <pre style="white-space: pre-wrap; font-family:monospace;">
 현실감있는 감정선
@@ -8,7 +8,7 @@
 
 <details><summary>58 <ins>
 마스터 마인드
-</ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
+</ins></summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이성민
 </span><br>리뷰: <pre>
 액션스릴러, 빌런, 박진감 넘치는 영화같은
@@ -16,7 +16,7 @@
 
 <details><summary>57 <ins>
 클린 코드
-</ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
+</ins></summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 설혜원
 </span><br>리뷰: <pre>
 재미는 있으나 임팩트는 없었다.
