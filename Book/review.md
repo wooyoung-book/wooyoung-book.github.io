@@ -590,7 +590,8 @@
 </summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 한이, 홍정기, 홍성호, 한새마, 황세연, 류성희, 장우석
 </span><br><span style="font-size: 90%; background-color: #e9ecef">
-리뷰:<br>
+리뷰:
+
 **(긴하루)** 길고 어두운 하루를 살아내는 누군가를 관찰할 수 있었다. 현실의 우울함을 옮겨놓은 것 같았다. 이빨 묘사가 생생해서 조금 섬뜩했다.
 
 **(에덴의 아이들)** 탐정을 주인공으로 재밌게 풀어나갔음. 후편이 기대됨. 가볍게 읽기 좋았다.
