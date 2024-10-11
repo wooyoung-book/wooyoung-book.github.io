@@ -1,4 +1,4 @@
-<details><summary>59&nbsp;<ins>
+<details><summary>59 <ins>
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애
@@ -42,7 +42,7 @@
 </span></details>
 
 
-<details><summary>54. <ins>
+<details><summary>54 <ins>
 냉면
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김유리, 범유진, dcdc, 전건우, 곽재식
@@ -50,7 +50,7 @@
 리뷰: 냉면으로 특이한 기분을 느낄 수 있다. 마지막 파인애플 냉면은 한번쯤 먹어보고 싶다.
 </span></details>
 
-<details><summary>53. <ins>
+<details><summary>53 <ins>
 시체 옆에 피는 꽃
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 공민철
@@ -59,7 +59,7 @@
 </span></details>
 
 
-<details><summary>52. <ins>
+<details><summary>52 <ins>
 지옥문을 여는 방법
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 권경희, 김경수, 김범석, 김재성, 김주동, 성성명, 양수련, 이상우, 한수경, 홍성호, 최종철, 조동신
@@ -68,7 +68,7 @@
 </span></details>
 
 
-<details><summary>51. <ins>
+<details><summary>51 <ins>
 코미디는 끝났다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이은
@@ -77,7 +77,7 @@
 </span></details>
 
 
-<details><summary>50. <ins>
+<details><summary>50 <ins>
 당신의 별이 사라지던 밤
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애
@@ -86,7 +86,7 @@
 </span></details>
 
 
-<details><summary>49. <ins>
+<details><summary>49 <ins>
 굿바이 마이 달링, 독거미 여인의 키스
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김재희, 김재성, 양수련, 조동신, 공민철, 김주동, 윤자영, 박상민, 정가일, 김범석
@@ -95,7 +95,7 @@
 </span></details>
 
 
-<details><summary>48. <ins>
+<details><summary>48 <ins>
 미친 X들
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애, 송시우, 정해연, 홍선주, 이은영, 한새마
@@ -104,7 +104,7 @@
 </span></details>
 
 
-<details><summary>47. <ins>
+<details><summary>47 <ins>
 나를 아는 남자
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 도진기
@@ -113,7 +113,7 @@
 </span></details>
 
 
-<details><summary>46. <ins>
+<details><summary>46 <ins>
 이상한 집
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 우케쓰
@@ -122,7 +122,7 @@
 </span></details>
 
 
-<details><summary>45. <ins>
+<details><summary>45 <ins>
 가토의 검
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김이수
@@ -131,7 +131,7 @@
 </span></details>
 
 
-<details><summary>44. <ins>
+<details><summary>44 <ins>
 백일몽
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 고을주
@@ -140,7 +140,7 @@
 </span></details>
 
 
-<details><summary>43. <ins>
+<details><summary>43 <ins>
 미술관의 쥐
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이은
@@ -149,7 +149,7 @@
 </span></details>
 
 
-<details><summary>42. <ins>
+<details><summary>42 <ins>
 네메시스의 단검
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이정훈
@@ -158,7 +158,7 @@
 </span></details>
 
 
-<details><summary>40-41. <ins>
+<details><summary>40-41 <ins>
 곰탕1&2
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김영탁
@@ -167,7 +167,7 @@
 </span></details>
 
 
-<details><summary>39. <ins>
+<details><summary>39 <ins>
 붉은 상자
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김정용
@@ -176,7 +176,7 @@
 </span></details>
 
 
-<details><summary>38. <ins>
+<details><summary>38 <ins>
 블랙 아이스
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이수안
@@ -185,7 +185,7 @@
 </span></details>
 
 
-<details><summary>37. <ins>
+<details><summary>37 <ins>
 어두운 물
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 전건우
@@ -194,7 +194,7 @@
 </span></details>
 
 
-<details><summary>36. <ins>
+<details><summary>36 <ins>
 칵테일, 러브, 좀비
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 조예은
@@ -203,7 +203,7 @@
 </span></details>
 
 
-<details><summary>35. <ins>
+<details><summary>35 <ins>
 불특정 다수
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 염유창
@@ -212,7 +212,7 @@
 </span></details>
 
 
-<details><summary>34. <ins>
+<details><summary>34 <ins>
 서울, 카타콤
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이봄
@@ -221,7 +221,7 @@
 </span></details>
 
 
-<details><summary>33. <ins>
+<details><summary>33 <ins>
 계간미스터리 2023 겨울 호
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김새봄, 팩트스토리, 박광규, (이시무, 히라노 쥬, 김유철, 황세연, 장우석, 백휴), 김소망, 쥬한량, 계간미스터리 편집부
@@ -241,7 +241,7 @@
 </span></details>
 
 
-<details><summary>32. <ins>
+<details><summary>32 <ins>
 추락
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 정명섭
@@ -250,7 +250,7 @@
 </span></details>
 
 
-<details><summary>31. <ins>
+<details><summary>31 <ins>
 순서의 문제
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 도진기
@@ -259,7 +259,7 @@
 </span></details>
 
 
-<details><summary>30. <ins>
+<details><summary>30 <ins>
 성은이 냥극하옵니다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 백승화
@@ -268,7 +268,7 @@
 </span></details>
 
 
-<details><summary>29. <ins>
+<details><summary>29 <ins>
 테디베어는 죽지않아
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 조예은
@@ -277,7 +277,7 @@
 </span></details>
 
 
-<details><summary>28. <ins>
+<details><summary>28 <ins>
 mymy
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 강진아
@@ -286,7 +286,7 @@ mymy
 </span></details>
 
 
-<details><summary>27. <ins>
+<details><summary>27 <ins>
 기요틴
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이스안
@@ -295,7 +295,7 @@ mymy
 </span></details>
 
 
-<details><summary>26. <ins>
+<details><summary>26 <ins>
 구원의 날
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 정해연
@@ -304,7 +304,7 @@ mymy
 </span></details>
 
 
-<details><summary>25. <ins>
+<details><summary>25 <ins>
 카데바
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이스안
@@ -313,7 +313,7 @@ mymy
 </span></details>
 
 
-<details><summary>24. <ins>
+<details><summary>24 <ins>
 푸른수염의 방
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 홍선주
@@ -322,7 +322,7 @@ mymy
 </span></details>
 
 
-<details><summary>22-23. <ins>
+<details><summary>22-23 <ins>
 리볼브1&2
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이종관
@@ -331,7 +331,7 @@ mymy
 </span></details>
 
 
-<details><summary>21. <ins>
+<details><summary>21 <ins>
 지하실의 새
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김은채
@@ -340,7 +340,7 @@ mymy
 </span></details>
 
 
-<details><summary>20. <ins>
+<details><summary>20 <ins>
 애널리스트
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이재영
@@ -349,7 +349,7 @@ mymy
 </span></details>
 
 
-<details><summary>19. <ins>
+<details><summary>19 <ins>
 심심포차 심심 사건
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 홍선주
@@ -358,7 +358,7 @@ mymy
 </span></details>
 
 
-<details><summary>18. <ins>
+<details><summary>18 <ins>
 유괴의 날
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 정해연
@@ -367,7 +367,7 @@ mymy
 </span></details>
 
 
-<details><summary>17. <ins>
+<details><summary>17 <ins>
 만조를 기다리며
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 조예은
@@ -376,7 +376,7 @@ mymy
 </span></details>
 
 
-<details><summary>16. <ins>
+<details><summary>16 <ins>
 오렌지와 빵칼
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 청예
@@ -385,7 +385,7 @@ mymy
 </span></details>
 
 
-<details><summary>15. <ins>
+<details><summary>15 <ins>
 네메시스 - 복수하는 여자들
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 한수옥, 박소해, 한새마, 김재희
@@ -394,7 +394,7 @@ mymy
 </span></details>
 
 
-<details><summary>14. <ins>
+<details><summary>14 <ins>
 종료되었습니다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 박하익
@@ -403,7 +403,7 @@ mymy
 </span></details>
 
 
-<details><summary>13. <ins>
+<details><summary>13 <ins>
 더블
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 정해연
@@ -412,7 +412,7 @@ mymy
 </span></details>
 
 
-<details><summary>12. <ins>
+<details><summary>12 <ins>
 혼숨
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 전건우, 홍정기, 양수련, 조동신
@@ -428,7 +428,7 @@ mymy
 </span></details>
 
 
-<details><summary>11. <ins>
+<details><summary>11 <ins>
 파괴자들의 밤
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애, 송시우, 정해연, 홍선주, 이은영
@@ -447,7 +447,7 @@ mymy
 
 
 
-<details><summary>10. <ins>
+<details><summary>10 <ins>
 전래미스터리
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 홍정기
@@ -465,7 +465,7 @@ mymy
 </span></details>
 
 
-<details><summary>9. <ins>
+<details><summary>9 <ins>
 드라이버에 40번 찔린 시체에 관하여
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 황세연, 김영민, 한새마, 김범석, 여실지, 유재이, 조동신
@@ -487,7 +487,7 @@ mymy
 </span></details>
 
 
-<details><summary>8. <ins>
+<details><summary>8 <ins>
 내가 죽인 남자가 돌아왔다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 황세연
@@ -496,7 +496,7 @@ mymy
 </span></details>
 
 
-<details><summary>7. <ins>
+<details><summary>7 <ins>
 초소년
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 홍정기
@@ -512,7 +512,7 @@ mymy
 </span></details>
 
 
-<details><summary>6. <ins>
+<details><summary>6 <ins>
 라플레시아걸
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 한새마
@@ -521,7 +521,7 @@ mymy
 </span></details>
 
 
-<details><summary>5. <ins>
+<details><summary>5 <ins>
 살의의 형태
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 홍정기
@@ -536,7 +536,7 @@ mymy
 </span></details>
 
 
-<details><summary>4. <ins>
+<details><summary>4 <ins>
 네 번의 노크
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 케이시
@@ -545,7 +545,7 @@ mymy
 </span></details>
 
 
-<details><summary>3. <ins>
+<details><summary>3 <ins>
 계간 미스터리 2020 봄.여름 특별 호
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 김범석, 윤자영, 김주호, 홍성호, 황세연, 홍정기
@@ -560,7 +560,7 @@ mymy
 </span></details>
 
 
-<details><summary>2. <ins>
+<details><summary>2 <ins>
 반전이 없다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 조영주
@@ -569,7 +569,7 @@ mymy
 </span></details>
 
 
-<details><summary>1. <ins>
+<details><summary>1 <ins>
 한국추리문학상 황금펜상 수상 작품집: 2021 제15회
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 한이, 홍정기, 홍성호, 한새마, 황세연, 류성희, 장우석
