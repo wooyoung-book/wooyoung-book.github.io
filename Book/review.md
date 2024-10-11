@@ -1,8 +1,8 @@
 <details><summary>59 <ins>
 모든 비밀에는 이름이 있다
-</ins></summary>작가: <span style="font-size: 90%; background-color: #FFDAB9">
+</ins></summary><span style="font-size: 90%">작가: </span><span style="font-size: 90%; background-color: #FFDAB9">
 서미애
-</span><br>리뷰: <span style="font-size: 90%; background-color: #e9ecef">
+</span><br><span style="font-size: 90%">리뷰: </span><span style="font-size: 90%; background-color: #e9ecef">
 현실감있는 감정선
 </span></details>
 
