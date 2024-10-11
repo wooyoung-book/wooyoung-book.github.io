@@ -2,9 +2,9 @@
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%">작가: </span><span style="font-size: 90%; background-color: #FFDAB9">
 서미애
-</span><br><span style="font-size: 90%">리뷰: </span><span style="font-size: 90%; background-color: #e9ecef">
+</span><br><span style="font-size: 90%">리뷰: </span><span style="font-size: 90%; background-color: #e9ecef"><pre>
 현실감있는 감정선
-</span></details>
+</pre></span></details>
 
 <details><summary>58 <ins>
 마스터 마인드
