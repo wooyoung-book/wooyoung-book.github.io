@@ -1,4 +1,4 @@
-<details><summary>59 <ins>
+<details><summary>59 <ins color="red">
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
 서미애
