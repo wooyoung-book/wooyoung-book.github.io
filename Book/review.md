@@ -1,4 +1,4 @@
-<details><summary>59 <ins style="underline-color:red">
+<details><summary>59 <ins>
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
 서미애
@@ -8,11 +8,10 @@
 
 <details><summary>58 <ins>
 마스터 마인드
-</ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
-작가: 이성민
-</span><br><span style="font-size: 90%; background-color: #e9ecef">
-리뷰: 액션스릴러, 빌런, 박진감 넘치는 영화같은
-</span></details>
+</ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">작가: 이성민
+</span><br>리뷰: <pre>
+액션스릴러, 빌런, 박진감 넘치는 영화같은
+</pre></span></details>
 
 
 <details><summary>57 <ins>
