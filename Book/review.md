@@ -31,7 +31,7 @@
 </pre></span></details>
 
 <details><summary>55 <ins>
-너와 나의 미스터리 - 이재익
+너와 나의 미스터리
 </ins></summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이재익
 </span><br><pre style="white-space: pre-wrap; font-family:monospace;">
