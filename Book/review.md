@@ -1,4 +1,4 @@
-<details><summary>59. <ins>
+<details><summary>59&nsbp;<ins>
 모든 비밀에는 이름이 있다
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애
@@ -6,7 +6,7 @@
 리뷰: 현실감있는 감정선
 </span></details>
 
-<details><summary>58. <ins>
+<details><summary>58 <ins>
 마스터 마인드
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이성민
@@ -15,7 +15,7 @@
 </span></details>
 
 
-<details><summary>57. <ins>
+<details><summary>57 <ins>
 클린 코드
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 설혜원
@@ -24,7 +24,7 @@
 </span></details>
 
 
-<details><summary>56. <ins>
+<details><summary>56 <ins>
 잘자요, 엄마
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 서미애
@@ -33,7 +33,7 @@
 </span></details>
 
 
-<details><summary>55. <ins>
+<details><summary>55 <ins>
 너와 나의 미스터리 - 이재익
 </ins></summary><span style="font-size: 90%; background-color: #FFDAB9">
 작가: 이재익
