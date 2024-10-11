@@ -557,7 +557,7 @@ mymy
 한국추리문학상 황금펜상 수상 작품집: 2021 제15회
 </ins></summary><span style="font-size: 90%">작가: <span style="background-color: #FFDAB9">
 한이, 홍정기, 홍성호, 한새마, 황세연, 류성희, 장우석
-</span><br>리뷰: <pre style="white-space: pre-wrap; font-family:monospace;">
+</span><br>리뷰: <pre style="white-space: pre-wrap; word-break: keep-all;">
 [ 긴하루 ]
 길고 어두운 하루를 살아내는 누군가를 관찰할 수 있었다. 현실의 우울함을 옮겨놓은 것 같았다. 이빨 묘사가 생생해서 조금 섬뜩했다.
   
