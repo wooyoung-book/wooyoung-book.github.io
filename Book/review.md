@@ -1,3 +1,22 @@
+<table><details><summary>59&nbsp;
+모든 비밀에는 이름이 있다
+</summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
+서미애
+</span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
+현실감있는 감정선
+</pre></span></details><hr style="height: 0.5pt; margin: 0; background-color: #000000;" />
+
+<details><summary>58&nbsp;
+마스터 마인드
+</summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
+이성민
+</span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
+액션스릴러, 빌런, 박진감 넘치는 영화같은
+</pre></span></details></table>
+
+
+
+
 <details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
