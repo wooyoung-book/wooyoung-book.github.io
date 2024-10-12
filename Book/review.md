@@ -2,7 +2,7 @@
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
-</span><br><pre style="white-space: pre-wrap; font-family:monospace;">
+</span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0px;">
 현실감있는 감정선
 </pre></span></details><hr style="height: 1px; margin: 1px 0; background-color: #000000;" />
 
