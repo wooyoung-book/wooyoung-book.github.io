@@ -614,5 +614,4 @@ S.T.E.P.
 분리된 기억의 세계
 디오게네스 변주곡
 엔더의 게임
-
-</pre></span></details><hr style="height: 0.5pt; margin: 1px 0; background-color: #000000;" />
+</pre></details><hr style="height: 0.5pt; margin: 1px 0; background-color: #000000;" />
