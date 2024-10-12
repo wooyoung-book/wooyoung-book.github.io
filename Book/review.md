@@ -1,5 +1,5 @@
 
-<div style="border: 1px solid"><details><summary>59&nbsp;
+<div style="border: 1px solid; margin: 10px"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
