@@ -1,5 +1,5 @@
 
-<div style="border: 1px; border-bottom: 0; solid; padding-left: 3px; padding-right: 3px"><details><summary>59&nbsp;
+<div style="border: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
@@ -7,7 +7,7 @@
 현실감있는 감정선
 </pre></span></details></div>
 
-<div style="border: 1px solid; padding: 3px"><details><summary>58&nbsp;
+<div style="border: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
 마스터 마인드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이성민
