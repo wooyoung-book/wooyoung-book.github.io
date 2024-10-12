@@ -15,7 +15,7 @@
 액션스릴러, 빌런, 박진감 넘치는 영화같은
 </pre></span></details></div>
 
-<div style="border: 1px solid; padding: 3px"><details><summary>57&nbsp;
+<div style="border: 0.5px solid; padding: 3px"><details><summary>57&nbsp;
 클린 코드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 설혜원
