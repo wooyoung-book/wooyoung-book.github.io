@@ -7,7 +7,7 @@
 현실감있는 감정선
 </pre></span></details></td></tr>
 
-<tr style="background-color: #FFFFFF><td><details><summary>58&nbsp;
+<tr><td><details><summary>58&nbsp;
 마스터 마인드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이성민
