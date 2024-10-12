@@ -6,7 +6,7 @@
 현실감있는 감정선
 </pre></span></details>
 
-<hr style="height:1px;border:none;color:#333;background-color:#333;">
+<p><hr style="height:1px;border:none;color:#5CFFD1;background-color:#333;"></p>
 
 <details><summary>58 <ins>
 마스터 마인드
