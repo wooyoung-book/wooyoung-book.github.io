@@ -1,27 +1,27 @@
 
-<div style="border: 5px solid"><details><summary>59&nbsp;
+<div style="border: 1px solid"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
 </span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 현실감있는 감정선
-</pre></span></details></div><hr style="height: 1pt; margin: 0; background-color: #000000;" />
+</pre></span></details></div>
 
-<details><summary>58&nbsp;
+<div style="border: 1px solid"><details><summary>58&nbsp;
 마스터 마인드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이성민
 </span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 액션스릴러, 빌런, 박진감 넘치는 영화같은
-</pre></span></details><hr style="height: 1pt; margin: 0; background-color: #000000;" />
+</pre></span></details></div>
 
-<details><summary>57&nbsp;
+<div style="border: 1px solid"><details><summary>57&nbsp;
 클린 코드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 설혜원
 </span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 재미는 있으나 임팩트는 없었다.
-</pre></span></details><hr style="height: 1pt; margin: 0; background-color: #000000;" />
+</pre></span></details></div>
 
 <details><summary>56&nbsp;
 잘자요, 엄마
