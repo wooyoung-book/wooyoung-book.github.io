@@ -6,7 +6,7 @@
 서미애
 </span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 현실감있는 감정선
-</pre></span></details></th></tr>
+</pre></span></details></td></tr>
 
 <tr><td bgcolor="white"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
