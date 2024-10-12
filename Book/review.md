@@ -4,7 +4,7 @@
 서미애
 </span><br><pre style="white-space: pre-wrap; font-family:monospace;">
 현실감있는 감정선
-</pre></span></details><hr style="height: 1px; margin: 1px 0; background-color: #000000";" />
+</pre></span></details><hr style="height: 1px; margin: 1px 0; background-color: #000000;" />
 
 <details><summary>58 <ins>
 마스터 마인드
