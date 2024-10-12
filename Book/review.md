@@ -8,7 +8,7 @@
 현실감있는 감정선
 </pre></span></details></td></tr>
 
-<tr><td bgcolor="white"><details><summary>59&nbsp;
+<tr><td bgcolor="white" width="100%"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
