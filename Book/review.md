@@ -7,13 +7,13 @@
 현실감있는 감정선
 </pre></span></details></td></tr>
 
-<details><summary>58&nbsp;
+<tr><td><details><summary>58&nbsp;
 마스터 마인드
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 이성민
 </span><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 액션스릴러, 빌런, 박진감 넘치는 영화같은
-</pre></span></details>
+</pre></span></details></td></tr></table>
 
 
 
