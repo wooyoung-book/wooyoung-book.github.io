@@ -5,7 +5,9 @@
 </span><br><pre style="white-space: pre-wrap; font-family:monospace;">
 현실감있는 감정선
 </pre></span></details>
-<hr>
+
+<hr style="height:30px">
+
 <details><summary>58 <ins>
 마스터 마인드
 </ins></summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
