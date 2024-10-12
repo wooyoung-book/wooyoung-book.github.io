@@ -1,5 +1,5 @@
 
-<table table-layout="fixed">
+<table table-layout="fixed" width="100%">
 <tr><td bgcolor="white" width="100%"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
