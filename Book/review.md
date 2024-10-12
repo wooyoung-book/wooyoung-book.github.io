@@ -1,8 +1,5 @@
-.special tr:nth-child(even) {
-background-color: #c2ddf2;
-}
 
-<table width="100%": 100%"><tr><td><details><summary>59&nbsp;
+<table style="width: 100%; bgcolor="red"": 100%"><tr><td><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
 서미애
