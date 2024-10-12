@@ -1,8 +1,6 @@
 
-<table style="table-layout=fixed">
-<colgroup>
-<col width="100%"/>
-</colgroup>
+<table style = "table-layout: auto; width: 100%; table-layout: fixed;">
+
 <tr><td bgcolor="white" width="100%"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
