@@ -603,7 +603,7 @@ mymy
 
 <details><summary>4&nbsp;
 2024.08 이전 -
-</summary><br><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
+</summary><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 홍학의 자리
 13.67
 망내인
