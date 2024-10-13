@@ -6,6 +6,6 @@
 
     function exitFullscreen() {
         if (lastVideoClicked) {
-            lastVideoClicked.scrollIntoView({ behavior: 'smooth' });
+            lastVideoClicked.scrollIntoView();
         }
     }
