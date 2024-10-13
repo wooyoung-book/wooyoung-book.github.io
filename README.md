@@ -1,8 +1,8 @@
 <span id="music" style="font-size: 90%; display:block" class="note"></span>
 <script src="_js/music.js"></script>
-9
+10
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
-</summary><span id="music" style="font-size: 90%; display:block" class="note"></span>
+</summary><span id="sdfv" style="font-size: 90%; display:block" class="note"></span>
 <script src="_js/music.js"></script>
 </details></div>
 
