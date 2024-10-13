@@ -1,8 +1,10 @@
 <script>
-import music from './Music/24.09.md'
+import music from 'music.md'
 </script>
-<!--@include:./Music/24.08.md-->
-{{ music }}
+
+
+<!--@include:music.md-->
+
 <div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
 Music
 </summary>
