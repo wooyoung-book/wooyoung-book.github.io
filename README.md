@@ -1,5 +1,11 @@
+<div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
+Music
+</summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
+이성민
+</span></details></div>
 
-
+```{include} Music/24.09.md
+```
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
 
