@@ -1,8 +1,8 @@
 <div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
 Music
-</summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
+</summary>
 이성민
-</span></details></div>
+</details></div>
 
 ```{include} wooyoung-book/Music/24.09.md
 ```
