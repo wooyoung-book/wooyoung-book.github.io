@@ -1,4 +1,4 @@
-fetch('../_html/music.html')
+fetch('_html/music.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('music').innerHTML = data;
