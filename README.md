@@ -4,9 +4,22 @@ Music
 </summary>
 이성민
 </details></div>
-````
-music.md
-````
+
+```python
+# 포함할 파일 경로
+included_file_path = 'included.md'
+# 메인 파일 경로
+main_file_path = 'main.md'
+
+# 포함할 파일 내용을 읽기
+with open(included_file_path, 'r', encoding='utf-8') as f:
+    included_content = f.read()
+
+# 메인 파일에 코드 블록 형태로 작성
+with open(main_file_path, 'w', encoding='utf-8') as f:
+    f.write('```markdown\n')
+    f.write(included_content)
+    f.write('\n```\n')
 
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
@@ -15,7 +28,7 @@ music.md
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 
 ### Book Review
-<br><hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
+<br>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
