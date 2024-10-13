@@ -602,7 +602,7 @@ mymy
 
 <br>
 
-<details><summary>
+<details><summary>&nbsp;
 2024.08 이전 -
 </summary><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 홍학의 자리
