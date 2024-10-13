@@ -4,15 +4,18 @@
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Music
 </summary><span style="font-size: 90%">
+
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
 </pre></span></details></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Video
 </summary><span style="font-size: 90%">
-<span>#### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)</span>
+
+#### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 </pre></span></details></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;">
+
 ### Book Review
 </div><br>
 
