@@ -1,9 +1,9 @@
 <script>
-import music from 'music.md'
+import music from './music.md'
 </script>
 
 
-<!--@include:music.md-->
+<!--@include:./music.md-->
 
 <div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
 Music
