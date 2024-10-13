@@ -17,7 +17,7 @@
 
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><b>Book Review</b></div>
-<div style="overflow-y: scroll; height:1000px;">
+<div style="overflow-y: scroll; height:500px;">
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
