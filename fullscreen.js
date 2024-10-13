@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-        var scrollpos = sessionStorage.getItem('scrollpos');
+        window.onload = function() {
+        const scrollpos = sessionStorage.getItem('scrollPosition');
         if (scrollpos) {
             window.scrollTo(0, scrollpos);
             sessionStorage.removeItem('scrollpos');
         }
-    });
+    };
 
-    window.addEventListener("beforeunload", function (e) {
+    window.onbeforeunload = function() {
         sessionStorage.setItem('scrollpos', window.scrollY);
-    });
+    };
