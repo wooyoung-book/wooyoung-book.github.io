@@ -1,17 +1,13 @@
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
-</summary><span id="music" style="font-size: 90%; display:block" class="e"></span></details></div>
+</summary><span id="music" style="font-size: 90%; display:block"></span></details></div>
 <script src="music.js"></script>
 
-<div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
-</summary><span style="font-size: 90%">
-<span id="video" style="display:block"></span>
-<script src="video.js"></script>
-</span></details></div>
-
-<div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Book Review</b>
-</summary><span style="font-size: 90%">
-<span id="review" style="display:block"></span>
+<div style="border-bottom: 0.5px solid; padding: 3px;"><b>Book Review</b>
+<span id="review" style="display:block; font-size: 90%"></span></div>
 <script src="review.js"></script>
-</span></details></div>
+
+<div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Video</b>
+</summary><span id="video" style="display:block"></span></details></div>
+<script src="video.js"></script>
 
 
