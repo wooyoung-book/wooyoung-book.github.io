@@ -1,4 +1,3 @@
-
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
@@ -602,7 +601,7 @@ mymy
 
 <br>
 
-<details><summary>&nbsp;
+<div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>&nbsp;
 2024.08 이전 -
 </summary><pre style="white-space: pre-wrap; font-family:monospace; margin: 0;">
 홍학의 자리
@@ -615,4 +614,4 @@ S.T.E.P.
 분리된 기억의 세계
 디오게네스 변주곡
 엔더의 게임
-</pre></details><hr style="height: 0.5px; margin: 0; background-color: #000000;" />
+</pre></details></div>
