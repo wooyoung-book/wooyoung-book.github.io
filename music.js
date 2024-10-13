@@ -1,4 +1,4 @@
-fetch('music.txt')
+fetch('music.md')
   .then(response => response.text())
   .then(data => {
     document.getElementById('music').innerText = data;
