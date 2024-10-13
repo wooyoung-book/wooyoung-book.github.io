@@ -7,10 +7,13 @@
 <script src="review.js"></script>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Video</b>
-</summary><span id="video" style="display:block"></span></details></div>
+</summary><span id="video" style="display:block">
+  
+<script src="fullscreen.js"></script>
+
+</span></details></div>
 <script src="video.js"></script>
 
-<script src="fullscreen.js"></script>
 i hate chess
 
 
