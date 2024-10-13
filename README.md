@@ -3,7 +3,7 @@
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
 </summary><span style="font-size: 90%">
 <span id="music" style="display:block"></span>
-</pre></span></details></div>
+</span></details></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Video
 </summary><span style="font-size: 90%">
