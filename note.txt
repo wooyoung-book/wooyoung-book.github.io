@@ -26,3 +26,9 @@ exel - ctrl+h  - check wildcard
 
 concat:
 ="12313"&A1&"sdfsdf" 
+
+horizontal line:
+<hr style="height: 0.5pt; margin: 0; background-color: #000000;" />
+
+border:
+<div style="border: 0.5px solid; padding: 3px;"></div>
