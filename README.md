@@ -16,8 +16,7 @@
 
 <div style="border-bottom: 0.5px solid; padding: 3px;">
 
-### Book Review
-</div><br>
+### Book Review</div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
