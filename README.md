@@ -5,7 +5,7 @@ Music
 이성민
 </details></div>
 
-{{muaic.txt}}
+{{music.txt}}
 
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
