@@ -221,7 +221,7 @@
 
 [ 탐정 박문수 - 성균관 살인사건 3 ]
 1,2 아직 안봄
-</pre></span></details>
+</pre></span></details></div>
 
 <div style="border: 0.5px solid; padding: 3px"><details><summary>32&nbsp;
 추락
@@ -391,7 +391,7 @@ mymy
 
 [ 불망비 ]
 마지막까지의 과정이 너무 지루했다.
-</pre></span></details>
+</pre></span></details></div>
 
 <div style="border: 0.5px solid; padding: 3px"><details><summary>11&nbsp;
 파괴자들의 밤
