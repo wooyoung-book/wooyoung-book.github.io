@@ -1,4 +1,4 @@
-fetch('../_html/review.html')
+fetch('_html/review.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('review').innerHTML = data;
