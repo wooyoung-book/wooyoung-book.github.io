@@ -1,6 +1,3 @@
----
-title-heading: false
----
 # iriidjd
 
 ## Book
