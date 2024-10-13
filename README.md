@@ -1,7 +1,8 @@
 <script>
 import music from './Music/24.09.md'
 </script>
-{{ music }}
+<!--@include:./Music/24.08.md-->
+
 <div style="border-bottom: 0.5px solid; padding: 3px"><details><summary>58&nbsp;
 Music
 </summary>
