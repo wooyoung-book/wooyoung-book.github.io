@@ -1,9 +1,11 @@
-window.addEventListener('scroll', function() {
-  localStorage.setItem('scrollPosition', window.scrollY);
+document.addEventListener("DOMContentLoaded", function (event) {
+        var scrollpos = sessionStorage.getItem('scrollpos');
+        if (scrollpos) {
+            window.scrollTo(0, scrollpos);
+            sessionStorage.removeItem('scrollpos');
+        }
+    });
 
-window.addEventListener('load', function() {
-  const scrollPosition = localStorage.getItem('scrollPosition');
-  if (scrollPosition) {
-    window.scrollTo(0, parseInt(scrollPosition, 10));
-  }
-});
+    window.addEventListener("beforeunload", function (e) {
+        sessionStorage.setItem('scrollpos', window.scrollY);
+    });
