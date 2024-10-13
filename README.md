@@ -1,6 +1,5 @@
-<span style="display:block" class="note">
-<span style="background-color: #FFFEBD"><a href="https://www.youtube.com/watch?v=pkbXucb7mtA" style="color: black; text-decoration: none;">Bola - Para Qweqway</a></span>
-</span>
+<span id="music" style="display:block" class="note"></span>
+<script src="music.js"></script>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Music
 </summary><span style="font-size: 90%">
