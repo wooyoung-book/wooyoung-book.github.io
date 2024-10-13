@@ -15,7 +15,7 @@
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 </pre></span></details></div>
 
-<div style="border-bottom: 0.5px solid; padding: 3px;"><span style="font-size: 90%"><b>Book Review</b></span></div>
+<div style="border-bottom: 0.5px solid; padding: 3px;"><b>Book Review</b></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
