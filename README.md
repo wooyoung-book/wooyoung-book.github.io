@@ -2,6 +2,7 @@
 <span style="background-color: #FFFEBD"><a href="https://www.youtube.com/watch?v=pkbXucb7mtA" style="color: black; text-decoration: none;">Bola - Para Qweqway</a></span>
 </span>
 
+
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Music
 </summary><span style="font-size: 90%">
 
@@ -14,8 +15,7 @@
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 </pre></span></details></div>
 
-#### Book Review
-<div style="border-bottom: 0.5px solid; padding: 3px;"> </div>
+<div style="border-bottom: 0.5px solid; padding: 3px;"><span style="font-size: 90%"><b>Book Review</b></span></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
