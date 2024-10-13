@@ -1,6 +1,6 @@
 <span id="music" style="display:block" class="te"></span>
-
-15
+<script src="music.js"></script>
+17
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
 </summary><span id="sdfv" style="font-size: 90%; display:block" class="e"></span>
 
@@ -17,5 +17,5 @@
 <span id="review" style="display:block" class="no"></span>
 <script src="_js/review.js"></script>
 </span></details></div>
-<script src="_js/music.js"></script>
+
 
