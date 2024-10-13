@@ -1,12 +1,16 @@
 
 
 ### Music
+<hr style="height: 0.5px; margin: 0; background-color: #000000;" />
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
 
 ### Video
+<hr style="height: 0.5px; margin: 0; background-color: #000000;" />
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 
 ### Book Review
+<hr style="height: 0.5px; margin: 0; background-color: #000000;" />
+
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
 </summary><span style="font-size: 90%"><span style="background-color: #FFDAB9">
