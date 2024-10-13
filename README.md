@@ -4,7 +4,7 @@ Music
 이성민
 </span></details></div>
 
-```{include} Music/24.09.md
+```{include} wooyoung-book/Music/24.09.md
 ```
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
