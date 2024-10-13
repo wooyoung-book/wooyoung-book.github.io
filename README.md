@@ -1,5 +1,5 @@
 <span id="music" style="font-size: 90%; display:block" class="note"></span>
-<script src="_js/music.js"></script>
+<script src="_js/music.js defer"></script>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
 </summary><span id="music" style="font-size: 90%; display:block" class="note"></span>
