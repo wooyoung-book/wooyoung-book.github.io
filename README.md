@@ -1,13 +1,11 @@
 
 
-### Music
-<br><hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
+### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
-<br>
-### Video
-<br><hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
+
+### Video<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
-<br>
+
 ### Book Review
 <br><hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 
