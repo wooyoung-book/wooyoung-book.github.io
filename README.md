@@ -5,7 +5,9 @@ Music
 이성민
 </details></div>
 
-<span style="display:block"><iframe src="music.md" seamless></iframe></span>
+
+<span style="display:block" class="note">It **works!**</span>
+
 
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
