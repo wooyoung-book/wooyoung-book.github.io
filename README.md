@@ -4,12 +4,9 @@ Music
 </summary>
 이성민
 </details></div>
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/pkbXucb7mtA" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+````
+music.md
+````
 
 ### Music<hr style="height: 0.5px; margin: 0; background-color: #000000;" /><br>
 #### [Ambient/Instrumental/ ...](Music/24.08.md)
