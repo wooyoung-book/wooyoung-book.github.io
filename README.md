@@ -15,7 +15,7 @@
 </pre></span></details></div>
 
 #### Book Review
-<div style="border-bottom: 0.5px solid; padding: 3px;"/>
+<div style="border-bottom: 0.5px solid; padding: 3px;"> </div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
 모든 비밀에는 이름이 있다
