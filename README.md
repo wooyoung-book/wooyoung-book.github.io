@@ -14,8 +14,7 @@
 #### [24.09](Video/24.09.md) &nbsp; [24.10](Video/24.10.md)
 </pre></span></details></div>
 
-<div style="border-bottom: 0.5px solid; padding: 3px;">
-
+<div style="border-bottom: 0.5px solid; padding: 3px;"><br>
 ### Book Review</div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>59&nbsp;
