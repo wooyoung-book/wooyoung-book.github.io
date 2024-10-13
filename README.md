@@ -1,10 +1,8 @@
-<span id="music" style="display:block" class="note"></span>
-<script src="music.js"></script>
+<script src="_js/music.js"></script>
 
-<div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Music
+<div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b></b>Ambient/Instrumental/ ...</b>
 </summary><span style="font-size: 90%">
-
-#### [Ambient/Instrumental/ ...](Music/24.08.md)
+<span id="music" style="display:block"></span>
 </pre></span></details></div>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary>Video
