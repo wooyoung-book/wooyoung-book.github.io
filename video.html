@@ -1,5 +1,3 @@
-<div style="height: 2000px;">
-  
 <iframe src="https://www.youtube.com/embed/LGPqtXv72Wg" style="width: 100%; aspect-ratio: 16 / 9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe src="https://www.youtube.com/embed/CqJ-6J0H4g0" style="width: 100%; aspect-ratio: 16 / 9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -15,17 +13,3 @@
 <iframe src="https://www.youtube.com/embed/jUFA6JUaAPY" style="width: 100%; aspect-ratio: 16 / 9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
-
-<script>
-    let lastScrollPosition = 0;
-
-    window.addEventListener('scroll', () => {
-        lastScrollPosition = window.scrollY;
-    });
-
-    document.getElementById('youtube-iframe').addEventListener('fullscreenchange', (event) => {
-        if (!document.fullscreenElement) {
-            window.scrollTo(0, lastScrollPosition);
-        }
-    });
-</script>
