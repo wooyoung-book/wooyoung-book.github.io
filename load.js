@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const iframe = document.createElement('iframe');
         iframe.src = url; // iframe의 src 설정
         iframe.style.width = '100%';
-        iframe.style.height = '300px';
         iframe.frameBorder = '0';
         contentSpan.appendChild(iframe); // contentSpan에 iframe 추가
       }
