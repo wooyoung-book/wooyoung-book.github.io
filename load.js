@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (type === 'iframe') {
         const iframe = document.createElement('iframe');
         iframe.src = url; // iframe의 src 설정
-        iframe.src = url; // iframe의 src 설정
         iframe.style.width = detailsElement.getAttribute('data-iframe-width') || '100%'; // 기본값 100%
         iframe.style.height = detailsElement.getAttribute('data-iframe-height') || 'auto'; // 기본값 auto
         iframe.style.aspectRatio = detailsElement.getAttribute('data-aspect-ratio') || '10 / 11'; // 기본값 10/11
