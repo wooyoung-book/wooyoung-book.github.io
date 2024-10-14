@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let isLoading = false;
 
   function loadHtml() {
-    if (isLoading) return; // 이미 로딩 중이면 무시
+    if (isLoading) return;
     isLoading = true;
 
-    fetch('chess.html') // 여기에 로드할 HTML 파일 경로를 입력하세요.
+    fetch('chess.html')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return response.text();
       })
       .then(data => {
-        document.querySelector('#chess').innerHTML = data; // 로드한 HTML을 삽입
+        document.querySelector('#chess').innerHTML = data;
       })
       .catch(err => console.error('Error loading HTML:', err))
       .finally(() => {
-        isLoading = false; // 로딩 완료
+        isLoading = false;
       });
   }
 
