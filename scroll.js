@@ -1,12 +1,17 @@
-// 모든 iframe에 대해 유튜브 API 초기화
-const iframes = document.querySelectorAll('.youtube-video');
-iframes.forEach(iframe => {
-    const player = new YT.Player(iframe, {
-        events: {
-            'onStateChange': onPlayerStateChange
-        }
+let players = [];
+
+// 유튜브 API가 로드된 후 호출되는 함수
+function onYouTubeIframeAPIReady() {
+    const iframes = document.querySelectorAll('.youtube-video');
+    iframes.forEach(iframe => {
+        const player = new YT.Player(iframe, {
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+        });
+        players.push(player); // 플레이어 저장
     });
-});
+}
 
 // 모든 비디오에 대한 상태 변화 감지
 function onPlayerStateChange(event) {
