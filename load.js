@@ -36,10 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (type === 'iframe') {
         const iframe = document.createElement('iframe');
         iframe.src = url; // iframe의 src 설정
-        iframe.style.width = detailsElement.getAttribute('data-iframe-width') || '100%'; // 기본값 100%
-        iframe.style.height = detailsElement.getAttribute('data-iframe-height') || '300px'; // 기본값 300px
-        iframe.frameBorder = detailsElement.getAttribute('data-iframe-border') || '0'; // 기본값 0
-        iframe.title = detailsElement.getAttribute('data-iframe-title') || ''; // 제목 설정 (접근성)
+        const width = detailsElement.getAttribute('data-iframe-width');
+        const height = detailsElement.getAttribute('data-iframe-height');
+        const aspectRatio = detailsElement.getAttribute('data-aspect-ratio');
+        const border = detailsElement.getAttribute('data-iframe-border');
+        const title = detailsElement.getAttribute('data-iframe-title');
+
+        // 속성이 정의된 경우에만 적용
+        if (width) iframe.style.width = width;
+        if (height) iframe.style.height = height;
+        if (aspectRatio) iframe.style.aspectRatio = aspectRatio;
+        if (border) iframe.frameBorder = border;
+        if (title) iframe.title = title;
         contentSpan.appendChild(iframe); // contentSpan에 iframe 추가
       }
     }
