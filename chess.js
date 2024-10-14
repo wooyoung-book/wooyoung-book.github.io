@@ -1,13 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   let isLoading = false;
 
-fetch('chess.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('chess').innerHTML = data;
-    })
-    .catch(error => console.error('Error fetching HTML:', error));
-
   function loadHtml() {
     if (isLoading) return; // 이미 로딩 중이면 무시
     isLoading = true;
