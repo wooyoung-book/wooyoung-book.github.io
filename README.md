@@ -5,6 +5,12 @@
   </details>
 </div>
 
+<div style="border-bottom: 0.5px solid;">
+  <details class="content-details" data-url="music.html" data-type="html">
+    <summary><b>Music(Ambient/Instrumental/...)</b></summary>
+    <span class="content" style="font-size: 90%; display:block"></span>
+  </details>
+</div>
 
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>Music(Ambient/Instrumental/...)</b>
