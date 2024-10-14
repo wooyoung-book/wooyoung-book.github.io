@@ -27,7 +27,5 @@
 </div>
 
 <script src="load.js"></script>
-<script src="scroll.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
 
 
