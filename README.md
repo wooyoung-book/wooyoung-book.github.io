@@ -1,6 +1,3 @@
-<script src="scroll.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-
 <div style="border-bottom: 0.5px solid;">
   <details class="content-details" data-url="chess.html" data-type="html">
     <summary><b>I hate chess.</b></summary>
@@ -30,5 +27,7 @@
 </div>
 
 <script src="load.js"></script>
+<script src="scroll.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 
 
