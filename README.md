@@ -1,3 +1,5 @@
+<script src="scroll.js"></script>
+
 <div style="border-bottom: 0.5px solid;">
   <details class="content-details" data-url="chess.html" data-type="html">
     <summary><b>I hate chess.</b></summary>
