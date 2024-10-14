@@ -7,7 +7,7 @@
 <script src="video.js"></script>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><details><summary><b>I hate chess.</b>
-</summary><span id="chess" style="display:block"></span></details></div>
+</summary><span id="chess" style="display:block"></span><div id="load-more-chess" style="height: 100px;"></div></details></div>
 <script src="chess.js"></script>
 
 <div style="border-bottom: 0.5px solid; padding: 3px;"><b>Book Review</b>
