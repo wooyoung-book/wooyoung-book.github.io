@@ -38,21 +38,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // 기존 iframe이 없으면 새로 생성
             if (!existingIframe) {
+                const videoContainer = document.createElement('div');
+                videoContainer.style.position = 'relative';
+                videoContainer.style.width = '320px'; // 비디오 크기 조정
+                videoContainer.style.height = '180px'; // 비율 맞추기
+                videoContainer.style.marginTop = '10px'; // 위쪽 여백 추가
+
                 existingIframe = document.createElement('iframe');
-                existingIframe.width = "320"; // iframe 너비
-                existingIframe.height = "180"; // iframe 높이
+                existingIframe.width = "100%"; // 컨테이너에 맞추기
+                existingIframe.height = "100%"; // 컨테이너에 맞추기
                 existingIframe.frameBorder = "0";
                 existingIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
                 existingIframe.allowFullscreen = true;
 
-                musicEContainer.appendChild(existingIframe); // 기존 요소에 추가
-            }
+                videoContainer.appendChild(existingIframe); // 비디오 컨테이너에 iframe 추가
 
-            // iframe src 업데이트
-            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
-
-            // X 버튼 생성
-            if (!musicEContainer.querySelector('button')) {
                 const closeButton = document.createElement('button');
                 closeButton.textContent = 'X';
                 closeButton.style.position = 'absolute';
@@ -61,18 +61,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
                 closeButton.style.color = 'white'; // 버튼 글자 색상
                 closeButton.style.border = 'none';
-                closeButton.style.padding = '3px 15px'; // 버튼 크기 조정
+                closeButton.style.padding = '3px 10px'; // 버튼 크기 조정
                 closeButton.style.cursor = 'pointer';
                 closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
 
                 closeButton.addEventListener('click', function() {
-                    existingIframe.remove(); // iframe 제거
-                    closeButton.remove(); // 버튼 제거
+                    videoContainer.remove(); // 비디오 컨테이너 제거
                     existingIframe = null; // 기존 iframe 변수 초기화
                 });
 
-                musicEContainer.appendChild(closeButton); // X 버튼 추가
+                videoContainer.appendChild(closeButton); // 비디오 컨테이너에 버튼 추가
+                musicEContainer.appendChild(videoContainer); // 음악 컨테이너에 비디오 추가
             }
+
+            // iframe src 업데이트
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
         }
     });
 });
