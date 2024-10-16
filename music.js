@@ -35,17 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
             
             const videoId = event.target.getAttribute('data-video-id');
             
-            // 기존 iframe, button 제거
+            // 기존 iframe 제거
             const existingIframe = musicEContainer.querySelector('iframe');
-            const existingButton = musicEContainer.querySelector('button');
             if (existingIframe) {
                 existingIframe.remove();
             }
-            if (existingButton) {
-                existingButton.remove();
-            }
 
-            // 컨테이너 생성
+            // 새로운 iframe 생성
             const videoContainer = document.createElement('div');
             videoContainer.style.position = 'relative';
             videoContainer.style.width = '320px'; // 비디오 크기 조정
