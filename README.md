@@ -29,6 +29,5 @@
 </div>
 
 <script src="load.js"></script>
-<script src="music.js"></script>
 
 
