@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             });
 
-            // 불러온 링크를 `music-e` 요소에 추가
+            // 불러온 링크를 추가
             videoLinks.forEach(link => myElement.appendChild(link.cloneNode(true)));
         })
         .catch(error => console.error('Error fetching music.html:', error));
