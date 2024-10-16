@@ -8,9 +8,9 @@
 </div>
 
 <div style="border-bottom: 0.5px solid;">
-  <details class="content-details">
+  <details id="music-d" class="content-details">
     <summary><b>Music(Ambient/Instrumental/...)</b></summary>
-    <span id="music" class="content" style="font-size: 90%; display:block"></span>
+    <span id="music-c" class="content" style="font-size: 90%; display:block"></span>
   </details>
 </div>
 
