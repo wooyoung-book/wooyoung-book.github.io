@@ -3,7 +3,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const myElement = document.getElementById('music-e'); // ID로 선택
-        fetch('links.html')
+        fetch('music.html')
             .then(response => response.text())
             .then(data => {
                 myElement.innerHTML = data;
