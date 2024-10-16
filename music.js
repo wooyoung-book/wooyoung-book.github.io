@@ -1,7 +1,5 @@
-<div id="music-e"></div>
-<script src="music.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function() {
         const myElement = document.getElementById('music-e'); // ID로 선택
         fetch('music.html')
             .then(response => response.text())
@@ -50,4 +48,3 @@
             });
         });
     }
-</script>
