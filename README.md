@@ -22,7 +22,7 @@
 <div style="border-bottom: 0.5px solid;">
   <details class="content-details" data-url="review.html">
     <summary><b>Book Review</b></summary>
-    <span class="content" style="font-size: 90%; display:block"></span>
+    <span class="content" style="overflow-y: scroll; height:500px; display:block"></span>
   </details>
 </div>
 
