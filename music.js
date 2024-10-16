@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const myElement = document.getElementById('music-e');
+    const myElement = document.querySelector('.music-e');
     const videoLinks = document.querySelectorAll('a[data-video-id]');
 
     videoLinks.forEach(link => {
