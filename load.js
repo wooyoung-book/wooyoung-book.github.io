@@ -4,12 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   detailsElements.forEach(details => {
     const contentSpan = details.querySelector('.content');
     const url = details.getAttribute('data-url');
-    const type = details.getAttribute('data-type');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          loadContent(details, contentSpan, url, type);
+          loadContent(details, contentSpan, url);
           observer.unobserve(entry.target); // 한 번만 로드
         }
       });
@@ -18,39 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(details);
   });
 
-  function loadContent(detailsElement, contentSpan, url, type) {
+  function loadContent(detailsElement, contentSpan, url) {
     if (!contentSpan.innerHTML) {
-      if (type === 'html') {
-        fetch(url)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.text();
-          })
-          .then(data => {
-            contentSpan.innerHTML = data; // 로드한 내용을 삽입
-            setupNestedDropdowns(contentSpan); // 중첩 드롭다운 초기화
-          })
-          .catch(err => console.error('Error loading HTML content:', err));
-      } else if (type === 'iframe') {
-        const iframe = document.createElement('iframe');
-        iframe.src = url; // iframe의 src 설정
-        iframe.style.width = detailsElement.getAttribute('data-iframe-width') || '100%'; // 기본값 100%
-        iframe.style.height = detailsElement.getAttribute('data-iframe-height') || 'auto'; // 기본값 auto
-        iframe.style.aspectRatio = detailsElement.getAttribute('data-aspect-ratio') || '10 / 11'; // 기본값 10/11
-        iframe.frameBorder = detailsElement.getAttribute('data-iframe-border') || '0'; // 기본값 0
-        iframe.title = detailsElement.getAttribute('data-iframe-title') || ''; // 제목 설정 (접근성)
-        iframe.allowTransparency = detailsElement.getAttribute('data-allowtransparency') || "true"; // 기본값 true
-
-         const transform = detailsElement.getAttribute('data-transform');
-        const scrolling = detailsElement.getAttribute('data-scrolling'); // scrolling 속성 추가
-        
-         if (transform) iframe.style.transform = transform;
-        if (scrolling) iframe.scrolling = scrolling;
-        
-        contentSpan.appendChild(iframe); // contentSpan에 iframe 추가
-      }
+      fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(data => {
+          contentSpan.innerHTML = data; // 로드한 내용을 삽입
+          setupNestedDropdowns(contentSpan); // 중첩 드롭다운 초기화
+        })
+        .catch(err => console.error('Error loading HTML content:', err));
     }
   }
 
@@ -60,12 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     nestedDetails.forEach(details => {
       const nestedContentSpan = details.querySelector('.nested-content');
       const nestedUrl = details.getAttribute('data-url');
-      const nestedType = details.getAttribute('data-type');
 
       const nestedObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            loadContent(details, nestedContentSpan, nestedUrl, nestedType);
+            loadContent(details, nestedContentSpan, nestedUrl);
             nestedObserver.unobserve(entry.target); // 한 번만 로드
           }
         });
