@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicEContainer = document.getElementById('music-e');
     
     let linksAdded = false; // 링크가 추가되었는지 여부를 추적
+    let existingIframe = null; // 기존 iframe 변수
 
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
@@ -34,49 +35,44 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
             
             const videoId = event.target.getAttribute('data-video-id');
-            
-            // 기존 iframe 제거
-            const existingIframe = musicEContainer.querySelector('iframe');
-            if (existingIframe) {
-                existingIframe.remove();
+
+            // 기존 iframe이 없으면 새로 생성
+            if (!existingIframe) {
+                existingIframe = document.createElement('iframe');
+                existingIframe.width = "320"; // iframe 너비
+                existingIframe.height = "180"; // iframe 높이
+                existingIframe.frameBorder = "0";
+                existingIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                existingIframe.allowFullscreen = true;
+
+                musicEContainer.appendChild(existingIframe); // 기존 요소에 추가
             }
 
-            // 새로운 iframe 생성
-            const videoContainer = document.createElement('div');
-            videoContainer.style.position = 'relative';
-            videoContainer.style.width = '320px'; // 비디오 크기 조정
-            videoContainer.style.height = '180px'; // 비율 맞추기
-
-            // iframe 생성
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
-            iframe.width = "100%"; // 컨테이너에 맞추기
-            iframe.height = "100%"; // 컨테이너에 맞추기
-            iframe.frameBorder = "0";
-            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-            iframe.allowFullscreen = true;
+            // iframe src 업데이트
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
 
             // X 버튼 생성
-            const closeButton = document.createElement('button');
-            closeButton.textContent = 'X';
-            closeButton.style.position = 'absolute';
-            closeButton.style.top = '5px';
-            closeButton.style.right = '5px';
-            closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
-            closeButton.style.color = 'white'; // 버튼 글자 색상
-            closeButton.style.border = 'none';
-            closeButton.style.padding = '3px 15px';
-            closeButton.style.cursor = 'pointer';
-            closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
+            if (!musicEContainer.querySelector('button')) {
+                const closeButton = document.createElement('button');
+                closeButton.textContent = 'X';
+                closeButton.style.position = 'absolute';
+                closeButton.style.top = '5px';
+                closeButton.style.right = '5px';
+                closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
+                closeButton.style.color = 'white'; // 버튼 글자 색상
+                closeButton.style.border = 'none';
+                closeButton.style.padding = '3px 15px'; // 버튼 크기 조정
+                closeButton.style.cursor = 'pointer';
+                closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
 
-            closeButton.addEventListener('click', function() {
-                videoContainer.remove(); // 비디오 컨테이너 제거
-            });
+                closeButton.addEventListener('click', function() {
+                    existingIframe.remove(); // iframe 제거
+                    closeButton.remove(); // 버튼 제거
+                    existingIframe = null; // 기존 iframe 변수 초기화
+                });
 
-            // DOM에 추가
-            videoContainer.appendChild(iframe);
-            videoContainer.appendChild(closeButton);
-            musicEContainer.appendChild(videoContainer);
+                musicEContainer.appendChild(closeButton); // X 버튼 추가
+            }
         }
     });
 });
