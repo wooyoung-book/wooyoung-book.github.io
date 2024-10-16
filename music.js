@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const iframe = document.createElement('iframe');
             iframe.src = `https://www.youtube.com/embed/${videoId}`;
             iframe.width = "50px";
-            iframe.ratio = 16 / 9;
+            iframe.aspect-ratio = "16 / 9";
             iframe.frameBorder = "0";
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
