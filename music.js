@@ -5,22 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('music.html')
         .then(response => response.text())
         .then(data => {
-            // 가져온 HTML 내용에서 링크만 추출
+            // 가져온 HTML 내용을 임시 DOM에 삽입하여 링크를 추출
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, 'text/html');
-            const videoLinks = doc.querySelectorAll('a[data-video-id]');
+            const videoLinks = doc.querySelectorAll('a[data-video-id]'); // 링크 선택
 
-            // 링크 추가
+            // 링크에 클릭 이벤트 추가
             videoLinks.forEach(link => {
-                const newLink = document.createElement('a');
-                newLink.href = "#";
-                newLink.setAttribute('data-video-id', link.getAttribute('data-video-id'));
-                newLink.textContent = link.textContent;
-
-                myElement.appendChild(newLink);
-
-                // 클릭 이벤트 추가
-                newLink.addEventListener('click', function(event) {
+                link.addEventListener('click', function(event) {
                     event.preventDefault(); // 기본 링크 클릭 동작 방지
 
                     // 기존 iframe 제거
@@ -30,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
                     // iframe 생성
-                    const videoId = newLink.getAttribute('data-video-id');
+                    const videoId = link.getAttribute('data-video-id');
                     const iframe = document.createElement('iframe');
                     iframe.src = `https://www.youtube.com/embed/${videoId}`;
                     iframe.width = "560";
