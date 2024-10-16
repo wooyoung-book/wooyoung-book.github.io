@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // iframe과 X 버튼 생성
             const iframe = document.createElement('iframe');
             iframe.src = `https://www.youtube.com/embed/${videoId}`;
-            iframe.width = "560";
-            iframe.height = "315";
+            iframe.width = "50px";
+            iframe.ratio = 16 / 9;
             iframe.frameBorder = "0";
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
