@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const myElement = document.getElementById('music-e'); // ID로 선택
+    const myElement = document.getElementById('music-e');
 
     // music.html 파일 불러오기
     fetch('music.html')
         .then(response => response.text())
         .then(data => {
-            // 가져온 HTML 내용을 임시 DOM에 삽입하여 링크를 추출
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, 'text/html');
-            const videoLinks = doc.querySelectorAll('a[data-video-id]'); // 링크 선택
+            const videoLinks = doc.querySelectorAll('a[data-video-id]');
 
             // 링크에 클릭 이벤트 추가
             videoLinks.forEach(link => {
                 link.addEventListener('click', function(event) {
-                    event.preventDefault(); // 기본 링크 클릭 동작 방지
+                    event.preventDefault();
 
                     // 기존 iframe 제거
                     const existingIframe = myElement.querySelector('iframe');
@@ -47,5 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     myElement.appendChild(closeButton);
                 });
             });
-        });
+
+            // 불러온 링크를 `music-e` 요소에 추가
+            videoLinks.forEach(link => myElement.appendChild(link.cloneNode(true)));
+        })
+        .catch(error => console.error('Error fetching music.html:', error));
 });
