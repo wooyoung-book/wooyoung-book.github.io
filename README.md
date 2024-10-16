@@ -1,4 +1,4 @@
-<div id="music-e"></div>
+<div class="music-e"></div>
 
 <div style="border-bottom: 0.5px solid;">
   <details class="content-details" data-url="chess.html">
