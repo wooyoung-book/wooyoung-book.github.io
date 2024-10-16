@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // iframe과 X 버튼 생성
             const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`;
             iframe.width = "360"; // 적절한 크기로 수정
             iframe.height = "115"; // 비율 맞추기
             iframe.frameBorder = "0";
