@@ -1,3 +1,5 @@
+<div id="music-e"></div>
+
 <div style="border-bottom: 0.5px solid;">
   <details class="content-details" data-url="chess.html">
     <summary><b>I hate chess.</b></summary>
@@ -27,5 +29,6 @@
 </div>
 
 <script src="load.js"></script>
+<script src="music.js"></script>
 
 
