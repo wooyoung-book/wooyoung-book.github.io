@@ -45,26 +45,42 @@ document.addEventListener("DOMContentLoaded", function() {
                 existingButton.remove();
             }
 
-            // iframe과 X 버튼 생성
+            // 컨테이너 생성
+            const videoContainer = document.createElement('div');
+            videoContainer.style.position = 'relative';
+            videoContainer.style.width = '560px'; // 비디오 크기 조정
+            videoContainer.style.height = '315px'; // 비율 맞추기
+
+            // iframe 생성
             const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`;
-            iframe.width = "360"; // 적절한 크기로 수정
-            iframe.height = "115"; // 비율 맞추기
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
+            iframe.width = "100%"; // 컨테이너에 맞추기
+            iframe.height = "100%"; // 컨테이너에 맞추기
             iframe.frameBorder = "0";
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
 
+            // X 버튼 생성
             const closeButton = document.createElement('button');
             closeButton.textContent = 'X';
+            closeButton.style.position = 'absolute';
+            closeButton.style.top = '10px';
+            closeButton.style.right = '10px';
+            closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
+            closeButton.style.color = 'white'; // 버튼 글자 색상
+            closeButton.style.border = 'none';
+            closeButton.style.padding = '5px 10px';
+            closeButton.style.cursor = 'pointer';
+            closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
 
             closeButton.addEventListener('click', function() {
-                iframe.remove();
-                closeButton.remove();
+                videoContainer.remove(); // 비디오 컨테이너 제거
             });
 
             // DOM에 추가
-            musicEContainer.appendChild(iframe);
-            musicEContainer.appendChild(closeButton);
+            videoContainer.appendChild(iframe);
+            videoContainer.appendChild(closeButton);
+            musicEContainer.appendChild(videoContainer);
         }
     });
 });
