@@ -1,10 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-            // music.html 파일 불러오기
-            fetch('music.html')
-                .then(response => response.text())
-                .then(data => {
-                    // music.html의 내용을 body에 삽입
-                    document.body.innerHTML += data;
 
                     // 링크 선택
                     const videoLinks = document.querySelectorAll('a[data-video-id]');
