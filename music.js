@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // 컨테이너 생성
             const videoContainer = document.createElement('div');
             videoContainer.style.position = 'relative';
-            videoContainer.style.width = '560px'; // 비디오 크기 조정
-            videoContainer.style.height = '315px'; // 비율 맞추기
+            videoContainer.style.width = '320px'; // 비디오 크기 조정
+            videoContainer.style.height = '180px'; // 비율 맞추기
 
             // iframe 생성
             const iframe = document.createElement('iframe');
@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const closeButton = document.createElement('button');
             closeButton.textContent = 'X';
             closeButton.style.position = 'absolute';
-            closeButton.style.top = '10px';
-            closeButton.style.right = '10px';
+            closeButton.style.top = '5px';
+            closeButton.style.right = '5px';
             closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
             closeButton.style.color = 'white'; // 버튼 글자 색상
             closeButton.style.border = 'none';
