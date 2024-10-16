@@ -6,8 +6,7 @@ function scrollToElementPosition(elementId, relativePosition = 0.5, behavior = '
         return;
     }
 
-    // Set up the onload event handler
-    element.onload = function() {
+    const handleScroll = () => {
         const elementDocument = element.contentDocument || element.contentWindow.document;
 
         if (elementDocument) {
@@ -23,9 +22,12 @@ function scrollToElementPosition(elementId, relativePosition = 0.5, behavior = '
         }
     };
 
-    // If the iframe is already loaded (in case it loads quickly), trigger the onload manually
+    // Set up the onload event handler
+    element.onload = handleScroll;
+
+    // If the iframe is already loaded (in case it loads quickly), trigger the scroll manually
     if (element.contentDocument.readyState === 'complete') {
-        element.onload();
+        handleScroll();
     }
 }
 
