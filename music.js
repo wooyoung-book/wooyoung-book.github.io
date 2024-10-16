@@ -48,10 +48,14 @@ document.addEventListener("DOMContentLoaded", function() {
             
             const videoId = event.target.getAttribute('data-video-id');
             
-            // 기존 iframe 제거
+            // 기존 iframe, button 제거
             const existingIframe = musicEContainer.querySelector('iframe');
+            const existingButton = musicEContainer.querySelector('button');
             if (existingIframe) {
                 existingIframe.remove();
+            }
+            if (existingButton) {
+                existingButton.remove();
             }
 
             // iframe과 X 버튼 생성
