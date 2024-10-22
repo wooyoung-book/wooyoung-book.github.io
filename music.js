@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
             musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
                 link.classList.remove('highlight');
                 link.style.backgroundColor = '#fff'; // 원래 색
-                link.style.transform = 'scale(1)'; // 초기 크기
+                link.style.transform = 'scale(1) translateX(0)'; // 초기 크기
             });
 
             // 클릭한 링크 하이라이트
             const targetLink = event.target;
             targetLink.classList.add('highlight');
             targetLink.style.backgroundColor = '#98FF98'; // 새로운 하이라이트 색상
-            targetLink.style.transform = 'scale(1.1)'; // 확대 효과
+            targetLink.style.transform = 'scale(1.1) translateX(10px)'; // 확대 효과
             targetLink.style.margin = 0;
 
             const videoId = targetLink.getAttribute('data-video-id');
@@ -51,22 +51,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function createLinksHTML() {
-        const emoji = "▶️";
-
         const links = [
-            { id: "pkbXucb7mtA", label: `${emoji} Bola - Para Qweqway` },
-            { id: "d_34u3yowvE", label: `${emoji} Sounds From The Ground - This Land` },
-            { id: "RgmufUgVmi8", label: `${emoji} Shadowy Men - Zombie Compromise` },
-            { id: "mmCnQDUSO4I", label: `${emoji} Shostakovich - Waltz No. 2` },
-            { id: "0VpQi7EOEDg", label: `${emoji} Drakphaser - Phasius Earth` },
-            { id: "oAN_UVHtCro", label: `${emoji} Dalot - Infinite Window` },
-            { id: "hxdfiHGrcCA", label: `${emoji} winterlight - Between Joy` },
-            { id: "ZCDAszFV-7U", label: `${emoji} Damjan Mravunac - False God` },
-            { id: "QMV3A65PTG0", label: `${emoji} S1gns of L1fe - Synesthetic State` },
-            { id: "HhmHj1Wn5s4", label: `${emoji} Dav Dralleon - Sword Ov Saturn` },
-            { id: "Q13-FiOJvFk", label: `${emoji} Quench - Slick` },
-            { id: "Jydilwi-ric", label: `${emoji} Rechenzentrum - Happy End` },
-            { id: "w9sSkEWbopA", label: `${emoji} Sense - Walking Water` },
+            { id: "pkbXucb7mtA", label: `Bola - Para Qweqway` },
+            { id: "d_34u3yowvE", label: `Sounds From The Ground - This Land` },
+            { id: "RgmufUgVmi8", label: `Shadowy Men - Zombie Compromise` },
+            { id: "mmCnQDUSO4I", label: `Shostakovich - Waltz No. 2` },
+            { id: "0VpQi7EOEDg", label: `Drakphaser - Phasius Earth` },
+            { id: "oAN_UVHtCro", label: `Dalot - Infinite Window` },
+            { id: "hxdfiHGrcCA", label: `winterlight - Between Joy` },
+            { id: "ZCDAszFV-7U", label: `Damjan Mravunac - False God` },
+            { id: "QMV3A65PTG0", label: `S1gns of L1fe - Synesthetic State` },
+            { id: "HhmHj1Wn5s4", label: `Dav Dralleon - Sword Ov Saturn` },
+            { id: "Q13-FiOJvFk", label: `Quench - Slick` },
+            { id: "Jydilwi-ric", label: `Rechenzentrum - Happy End` },
+            { id: "w9sSkEWbopA", label: `Sense - Walking Water` },
         ];
 
         return links.map(link => `
@@ -83,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function() {
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
                        cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#98FF98';"
-                   onmouseout="this.style.backgroundColor='#fff';">
+                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';"
+                   onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1) translateX(0)';">
                     ${link.label}
                 </a>
             </div>
