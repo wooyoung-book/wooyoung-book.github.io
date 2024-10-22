@@ -19,23 +19,24 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target.matches('a[data-video-id]')) {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
             
-        // 하이라이트 처리 부분
-        const highlightedLinks = musicContainer.querySelectorAll('.highlight');
-        highlightedLinks.forEach(link => {
-            link.classList.remove('highlight');
-            link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
-            link.style.transform = 'scale(1)'; // 초기 크기로 복원
-            link.style.padding = '8px 12px'; // 초기 패딩
-        });
+// 하이라이트 처리 부분
+const highlightedLinks = musicContainer.querySelectorAll('.highlight');
+highlightedLinks.forEach(link => {
+    link.classList.remove('highlight');
+    link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
+    link.style.transform = 'scale(1)'; // 초기 크기로 복원
+    link.style.padding = '6px 10px'; // 패딩 조정
+});
 
-        // 클릭한 링크 하이라이트
-        event.target.classList.add('highlight');
-        event.target.style.backgroundColor = '#4CAF50'; // 세련된 색상 (예: 초록색)
-        event.target.style.transform = 'scale(1.1)'; // 확대 효과
-        event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
-        event.target.style.lineHeight = 'normal';
-        event.target.style.padding = '8px 12px'; // 패딩 설정 (기본 패딩과 동일하게)
-        event.target.style.margin = '0'; // 마진 설정
+// 클릭한 링크 하이라이트
+event.target.classList.add('highlight');
+event.target.style.backgroundColor = '#FFC107'; // 세련된 색상
+event.target.style.border = '1px solid transparent'; // 외곽선 좌우 없애기
+event.target.style.transform = 'scale(1.05)'; // 약간의 확대 효과
+event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
+event.target.style.lineHeight = 'normal';
+event.target.style.padding = '6px 10px'; // 패딩 설정 (기본 패딩과 동일하게)
+event.target.style.margin = '0'; // 마진 설정
             
             const videoId = event.target.getAttribute('data-video-id');
 
@@ -74,26 +75,27 @@ document.addEventListener("DOMContentLoaded", function() {
             { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
-                return links.map(link => `
-                    <div style="margin: 0;">
-                        <a href="#" 
-                           data-video-id="${link.id}" 
-                           style="
-                               display: block; 
-                               padding: 8px 12px;  /* 패딩 */
-                               background-color: #FFFEBD; 
-                               color: #333; 
-                               text-decoration: none; 
-                               border: 1px solid #ccc; 
-                               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                               transition: background-color 0.3s, transform 0.2s;
-                           "
-                           onmouseover="this.style.backgroundColor='#FFD700'; this.style.transform='scale(1.05)';"
-                           onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.transform='scale(1)';">
-                            ${link.label}
-                        </a>
-                    </div>
-                `).join('');
+return links.map(link => `
+    <div style="margin: 0;">
+        <a href="#" 
+           data-video-id="${link.id}" 
+           style="
+               display: block; 
+               padding: 6px 10px; /* 패딩 줄이기 */
+               background-color: #FFFEBD; 
+               color: #333; 
+               text-decoration: none; 
+               border: 1px solid transparent; /* 좌우 외곽선 없애기 */
+               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+               transition: background-color 0.3s, transform 0.2s;
+               font-size: 14px; /* 글자 크기 줄이기 */
+           "
+           onmouseover="this.style.backgroundColor='#FFC107'; this.style.border='1px solid transparent'; this.style.transform='scale(1.05)';"
+           onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.border='1px solid transparent'; this.style.transform='scale(1)';">
+            ${link.label}
+        </a>
+    </div>
+`).join('');
     }
 
     function createVideoContainer() {
