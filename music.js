@@ -7,22 +7,25 @@ document.addEventListener("DOMContentLoaded", function() {
     let existingIframe = null;
     let highlightedLink = null;
     let videoId = '';
+    let historyStack = []; // 히스토리 스택 추가
 
     // 관련 정보 표시를 위한 요소
     const infoDisplay = document.createElement('div');
-    infoDisplay.style.marginTop = '5px';
-    infoDisplay.style.fontSize = '14px';
+    infoDisplay.style.marginTop = '10px';
+    infoDisplay.style.fontSize = '16px';
     musicEContainer.appendChild(infoDisplay);
 
     // URL 해시 변경 시 상태 반영
     window.addEventListener('popstate', function(event) {
-        if (event.state) {
-            videoId = event.state.videoId;
+        if (historyStack.length > 1) {
+            historyStack.pop(); // 현재 상태 제거
+            videoId = historyStack[historyStack.length - 1]; // 이전 상태 가져오기
             updateUIForVideo(videoId);
         } else {
-            // 해시가 없는 경우 초기화
+            // 히스토리 스택이 비어있는 경우 초기화
             removeHighlight();
             infoDisplay.textContent = '';
+            videoId = '';
         }
     });
 
@@ -63,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 updateInfoDisplay(currentVideoId, currentLabel);
                 
                 // 상태 변경 및 URL 해시 업데이트
-                history.pushState({ videoId }, '', `#${videoId}`);
+                historyStack.push(videoId); // 히스토리 스택에 추가
+                history.pushState({}, '', `#${videoId}`);
             }
         }
     });
@@ -73,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (linkToHighlight) {
             linkToHighlight.classList.add('highlight');
             linkToHighlight.style.backgroundColor = '#98FF98'; 
-            linkToHighlight.style.transform = 'scale(1.1) translateX(10px)';
+            linkToHighlight.style.transform = 'scale(1.1) translateX(10px)'; 
             linkToHighlight.style.margin = 0;
         }
     }
@@ -116,9 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        border-bottom: 1px solid #000;
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
-                       cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';"
-                   onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1) translateX(0)';">
+                       cursor: pointer;">
                     ${link.label}
                 </a>
             </div>
@@ -159,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
             removeHighlight(); // Clear highlight when closing
             videoId = '';
             infoDisplay.textContent = ''; // 정보 초기화
+            historyStack = []; // 히스토리 스택 초기화
             history.pushState(null, '', window.location.pathname); // 해시 초기화
         });
 
@@ -190,10 +193,6 @@ document.addEventListener("DOMContentLoaded", function() {
             highlightLink(videoId);
             updateInfoDisplay(videoId, highlightedLink.textContent);
             existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
-        } else {
-            // 하이라이트 및 정보 초기화
-            removeHighlight();
-            infoDisplay.textContent = '';
         }
     }
 
