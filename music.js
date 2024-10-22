@@ -73,21 +73,22 @@ document.addEventListener("DOMContentLoaded", function() {
             { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
-            return links.map(link => `
+                return links.map(link => `
                     <div style="margin: 0;">
                         <a href="#" 
                            data-video-id="${link.id}" 
                            style="
                                display: block; 
-                               padding: 0 5px; 
+                               padding: 10px 15px; 
                                background-color: #FFFEBD; 
-                               color: black; 
+                               color: #333; 
                                text-decoration: none; 
-                               border-radius: 3px; 
-                               border: 1px solid #ccc; /* 외곽선 추가 */
+                               border: 1px solid #ccc; 
+                               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+                               transition: background-color 0.3s, transform 0.2s; /* 부드러운 전환 효과 */
                            "
-                           onmouseover="this.style.backgroundColor='#FFD700';"
-                           onmouseout="this.style.backgroundColor='#FFFEBD';">
+                           onmouseover="this.style.backgroundColor='#FFD700'; this.style.transform='scale(1.05)';"
+                           onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.transform='scale(1)';">
                             ${link.label}
                         </a>
                     </div>
