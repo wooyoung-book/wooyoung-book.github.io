@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let existingIframe = null;
     let highlightedLink = null;
     let videoId = '';
-    let backCount = 0;
     let historyStack = []; // 히스토리 스택 추가
 
     // 관련 정보 표시를 위한 요소
@@ -18,12 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // URL 해시 변경 시 상태 반영
     window.addEventListener('popstate', function(event) {
-        backCount++;
-        if (backCount === 1) {
-            history.go(-1);
-             backCount = 0;
-        }
-
         if (history.state && history.state.videoId) {
             videoId = history.state.videoId;
             updateUIForVideo(videoId);
