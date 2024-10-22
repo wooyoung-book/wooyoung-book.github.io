@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 이전 하이라이트 제거
             const highlightedLinks = musicContainer.querySelectorAll('.highlight');
             highlightedLinks.forEach(link => link.classList.remove('highlight'));
+            highlightedLinks.forEach(link => link.style.backgroundColor = '#FFFEBD'); // 원래 색으로 복원
 
             // 클릭한 링크 하이라이트
             event.target.classList.add('highlight');
@@ -65,12 +66,13 @@ document.addEventListener("DOMContentLoaded", function() {
         ];
 
         return links.map(link => `
-            <a href="#" 
-               data-video-id="${link.id}" 
-               style="color: black; text-decoration: none; background-color: #FFFEBD; padding: 5px 10px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;"
-               aria-label="${link.label}">
-                ${link.label}
-            </a><br>
+            <div style="margin-bottom: 10px;">
+                <a href="#" 
+                   data-video-id="${link.id}" 
+                   style="color: black; text-decoration: none; background-color: #FFFEBD; padding: 10px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
+                    ${link.label}
+                </a>
+            </div>
         `).join('');
     }
 
