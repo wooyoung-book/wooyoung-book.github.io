@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             if (videoId) {
                 highlightLink(videoId);
+                updateInfoDisplay(videoId);
             }
         }
     });
@@ -32,8 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (targetLink) {
             event.preventDefault();
             const currentVideoId = targetLink.getAttribute('data-video-id');
-            const currentLabel = targetLink.textContent; // 링크 정보 저장
+            const currentLabel = targetLink.textContent;
 
+            // 현재 재생 중인 링크가 바뀌면 하이라이트 및 정보 업데이트
             if (highlightedLink !== targetLink) {
                 removeHighlight();
                 highlightedLink = targetLink;
@@ -43,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (!existingIframe) {
                     createVideoContainer();
                 }
-                existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; 
+                existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
 
                 // iframe 아래에 링크 정보 표시
-                infoDisplay.textContent = `현재 재생 중: ${currentLabel}`;
+                updateInfoDisplay(currentVideoId, currentLabel);
             }
         }
     });
@@ -153,4 +155,21 @@ document.addEventListener("DOMContentLoaded", function() {
         videoContainer.appendChild(closeButton);
         musicEContainer.appendChild(videoContainer);
     }
+
+    function updateInfoDisplay(videoId, label) {
+        const linkInfo = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
+        if (linkInfo) {
+            infoDisplay.textContent = `현재 재생 중: ${label}`;
+        }
+    }
+
+    // iframe이 로드될 때마다 비디오 ID를 확인하여 하이라이트 및 정보 업데이트
+    existingIframe.addEventListener('load', function() {
+        if (videoId) {
+            const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
+            if (linkToHighlight) {
+                updateInfoDisplay(videoId, linkToHighlight.textContent);
+            }
+        }
+    });
 });
