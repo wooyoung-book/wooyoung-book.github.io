@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             linksAdded = true; // 링크 추가 후 플래그 설정
         } 
         
-        if (musicDetails.open && currentVideoId) {
+        if (musicDetails.open && videoId) {
             const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
             // 드롭다운이 열릴 때 현재 비디오 ID에 따라 하이라이트와 iframe 설정
             if (linkToHighlight) {
