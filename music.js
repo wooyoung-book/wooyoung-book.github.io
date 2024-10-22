@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ];
 
         return links.map(link => `
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 0px;">
                 <a href="#" 
                    data-video-id="${link.id}" 
                    style="color: black; text-decoration: none; background-color: #FFFEBD; padding: 10px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
