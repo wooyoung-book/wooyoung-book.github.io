@@ -19,22 +19,23 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target.matches('a[data-video-id]')) {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
             
-            // 이전 하이라이트 제거
-            const highlightedLinks = musicContainer.querySelectorAll('.highlight');
-            highlightedLinks.forEach(link => {
-                link.classList.remove('highlight');
-                link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
-                link.style.transform = 'scale(1)';
-            });
+        // 하이라이트 처리 부분
+        const highlightedLinks = musicContainer.querySelectorAll('.highlight');
+        highlightedLinks.forEach(link => {
+            link.classList.remove('highlight');
+            link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
+            link.style.transform = 'scale(1)'; // 초기 크기로 복원
+            link.style.padding = '8px 12px'; // 초기 패딩
+        });
 
-            // 클릭한 링크 하이라이트
-            event.target.classList.add('highlight');
-            event.target.style.backgroundColor = '#FFD700'; // 하이라이트 색상
-            event.target.style.transform = 'scale(1.1)'; // 확대 효과
-            event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
-            event.target.style.lineHeight = 'normal'; // 원하는 line-height 설정
-            event.target.style.padding = '0 5px'; // 필요한 경우 패딩 설정
-            event.target.style.margin = '0'; // 필요한 경우 마진 설정
+        // 클릭한 링크 하이라이트
+        event.target.classList.add('highlight');
+        event.target.style.backgroundColor = '#4CAF50'; // 세련된 색상 (예: 초록색)
+        event.target.style.transform = 'scale(1.1)'; // 확대 효과
+        event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
+        event.target.style.lineHeight = 'normal';
+        event.target.style.padding = '8px 12px'; // 패딩 설정 (기본 패딩과 동일하게)
+        event.target.style.margin = '0'; // 마진 설정
             
             const videoId = event.target.getAttribute('data-video-id');
 
@@ -79,13 +80,13 @@ document.addEventListener("DOMContentLoaded", function() {
                            data-video-id="${link.id}" 
                            style="
                                display: block; 
-                               padding: 10px 15px; 
+                               padding: 8px 12px;  /* 패딩 */
                                background-color: #FFFEBD; 
                                color: #333; 
                                text-decoration: none; 
                                border: 1px solid #ccc; 
-                               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-                               transition: background-color 0.3s, transform 0.2s; /* 부드러운 전환 효과 */
+                               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                               transition: background-color 0.3s, transform 0.2s;
                            "
                            onmouseover="this.style.backgroundColor='#FFD700'; this.style.transform='scale(1.05)';"
                            onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.transform='scale(1)';">
