@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", function() {
                    style="
                        display: block; 
                        padding: 0; 
-                       background-color: #fff;
-                       color: #000;
+                       background-color: #fff; 
+                       color: #000; 
                        text-decoration: none; 
-                       border-bottom: 1px solid #000;
-                       transition: background-color 0.3s, transform 0.2s;
-                       font-size: 14px;
-                       cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';"
+                       border-bottom: 1px solid #000; 
+                       transition: background-color 0.3s, transform 0.2s; 
+                       font-size: 14px; 
+                       cursor: pointer;" 
+                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';" 
                    onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1) translateX(0)';">
                     ${link.label}
                 </a>
