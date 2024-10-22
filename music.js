@@ -5,31 +5,42 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let linksAdded = false; // 링크 추가 여부 추적
     let existingIframe = null; // 기존 iframe 변수
+    let highlightedLink = null; // 현재 하이라이트된 링크
 
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
             musicContainer.innerHTML = createLinksHTML();
             linksAdded = true; // 링크 추가 후 플래그 설정
+        } else if (musicDetails.open && currentVideoId) {
+            // 드롭다운이 열릴 때 현재 비디오 ID에 따라 하이라이트와 iframe 설정
+            if (highlightedLink) {
+                highlightedLink.classList.add('highlight');
+                highlightedLink.style.backgroundColor = '#98FF98'; // 하이라이트 색상
+                highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; // 확대 효과
+            }
         }
     });
 
     musicContainer.addEventListener('click', function(event) {
         if (event.target.matches('a[data-video-id]')) {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
-
-            // 모든 링크를 원래 색으로 복원
-            musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
-                link.classList.remove('highlight');
-                link.style.backgroundColor = '#fff'; // 원래 색
-                link.style.transform = 'scale(1) translateX(0)'; // 초기 크기
-            });
-
-            // 클릭한 링크 하이라이트
+            
+            // 클릭한 링크가 하이라이트된 링크가 아닌 경우에만 하이라이트 처리
             const targetLink = event.target;
-            targetLink.classList.add('highlight');
-            targetLink.style.backgroundColor = '#98FF98'; // 새로운 하이라이트 색상
-            targetLink.style.transform = 'scale(1.1) translateX(10px)'; // 확대 효과
-            targetLink.style.margin = 0;
+            if (highlightedLink !== targetLink) {
+                // 모든 링크를 원래 색으로 복원 (하이라이트 해제)
+                if (highlightedLink) {
+                    highlightedLink.classList.remove('highlight');
+                    highlightedLink.style.backgroundColor = '#fff'; // 원래 색
+                    highlightedLink.style.transform = 'scale(1) translateX(0)'; // 초기 크기
+                }
+
+                // 클릭한 링크 하이라이트
+                highlightedLink = targetLink; // 현재 하이라이트된 링크 저장
+                highlightedLink.classList.add('highlight');
+                highlightedLink.style.backgroundColor = '#98FF98'; // 새로운 하이라이트 색상
+                highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; // 확대 효과
+                highlightedLink.style.margin = 0;
 
             const videoId = targetLink.getAttribute('data-video-id');
 
@@ -120,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.addEventListener('click', function() {
             videoContainer.remove(); // 비디오 컨테이너 제거
             existingIframe = null; // 기존 iframe 변수 초기화
+            highlightedLink = null; // 하이라이트된 링크 초기화
         });
 
         closeButton.onmouseover = function() {
