@@ -1,11 +1,4 @@
-<div id="music-c" style="position: relative; display: inline-block;">
-    <button id="dropdown-button" style="padding: 10px; background-color: #FFFEBD; border: none; border-radius: 5px; cursor: pointer;">
-        Select a Track
-    </button>
-    <div id="dropdown-menu" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 5px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-        ${createLinksHTML()}
-    </div>
-</div>
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const dropdownButton = document.getElementById('dropdown-button');
