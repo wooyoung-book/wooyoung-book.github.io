@@ -19,15 +19,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target.matches('a[data-video-id]')) {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
             
-// 하이라이트 처리 부분
-const highlightedLinks = musicContainer.querySelectorAll('.highlight');
-highlightedLinks.forEach(link => {
-    link.classList.remove('highlight');
-    link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
-    link.style.transform = 'scale(1)'; // 초기 크기로 복원
-    link.style.padding = '6px 10px'; // 패딩 조정
-});
-
+        // 모든 링크를 원래 색으로 복원
+        musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
+            link.classList.remove('highlight');
+            link.style.backgroundColor = '#FFFEBD'; // 원래 색
+            link.style.transform = 'scale(1)'; // 초기 크기
+        });
+            
 // 클릭한 링크 하이라이트
 event.target.classList.add('highlight');
 event.target.style.backgroundColor = '#FFC107'; // 세련된 색상
@@ -37,6 +35,9 @@ event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
 event.target.style.lineHeight = 'normal';
 event.target.style.padding = '6px 10px'; // 패딩 설정 (기본 패딩과 동일하게)
 event.target.style.margin = '0'; // 마진 설정
+    }
+        
+
             
             const videoId = event.target.getAttribute('data-video-id');
 
