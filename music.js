@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        background-color: #FFFEBD; 
                        padding: 0 5px; 
                        margin: 0;
+                       line-height: 0;
                        border-radius: 5px; 
                        display: inline-block; 
                        transition: background-color 0.3s ease;">
