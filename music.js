@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 관련 정보 표시를 위한 요소
     const infoDisplay = document.createElement('div');
-    infoDisplay.style.marginTop = '10px';
-    infoDisplay.style.fontSize = '16px';
+    infoDisplay.style.marginTop = '5px';
+    infoDisplay.style.fontSize = '14px';
     musicEContainer.appendChild(infoDisplay);
 
     // URL 해시 변경 시 상태 반영
@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.state) {
             videoId = event.state.videoId;
             updateUIForVideo(videoId);
+        } else {
+            // 해시가 없는 경우 초기화
+            removeHighlight();
+            infoDisplay.textContent = '';
         }
     });
 
@@ -69,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (linkToHighlight) {
             linkToHighlight.classList.add('highlight');
             linkToHighlight.style.backgroundColor = '#98FF98'; 
-            linkToHighlight.style.transform = 'scale(1.1) translateX(10px)'; 
+            linkToHighlight.style.transform = 'scale(1.1) translateX(10px)';
+            linkToHighlight.style.margin = 0;
         }
     }
 
@@ -185,6 +190,10 @@ document.addEventListener("DOMContentLoaded", function() {
             highlightLink(videoId);
             updateInfoDisplay(videoId, highlightedLink.textContent);
             existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+        } else {
+            // 하이라이트 및 정보 초기화
+            removeHighlight();
+            infoDisplay.textContent = '';
         }
     }
 
