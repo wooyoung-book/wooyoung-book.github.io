@@ -23,11 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
             const highlightedLinks = musicContainer.querySelectorAll('.highlight');
             highlightedLinks.forEach(link => link.classList.remove('highlight'));
             highlightedLinks.forEach(link => link.style.backgroundColor = '#FFFEBD'); // 원래 색으로 복원
-
+            link.style.lineHeight = ''; // 기본 line-height 복원
+            link.style.padding = ''; // 기본 padding 복원
+            
             // 클릭한 링크 하이라이트
             event.target.classList.add('highlight');
             event.target.style.backgroundColor = '#FFD700'; // 하이라이트 색상
-
+            event.target.style.lineHeight = 'normal'; // 원하는 line-height 설정
+            event.target.style.padding = '0'; // 불필요한 padding 제거
+            
             const videoId = event.target.getAttribute('data-video-id');
 
             // 비디오 ID 유효성 검사
