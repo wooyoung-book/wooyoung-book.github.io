@@ -73,15 +73,14 @@ document.addEventListener("DOMContentLoaded", function() {
                    data-video-id="${link.id}" 
                    style="
                        display: block; 
-                       padding: 0 5px; 
+                       padding: 0 10px; 
                        background-color: #fff; 
-                       color: #000; 
                        text-decoration: none; 
-                       border-top: 1px solid #000; 
-                       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                       border-top: 1px solid #000;
+                       border-bottom: 1px solid #000;
                        transition: background-color 0.3s, transform 0.2s;
-                       font-size: 14px;"
-                       cursor: pointer;
+                       font-size: 14px;
+                       cursor: pointer;"
                    onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.05)';"
                    onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1)';">
                     ${link.label}
