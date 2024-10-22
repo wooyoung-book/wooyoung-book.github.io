@@ -112,8 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
         closeButton.style.color = 'white'; // 버튼 글자 색상
         closeButton.style.border = 'none';
-        closeButton.style.borderRadius = '4px'; // 모서리 둥글게
-        closeButton.style.padding = '5px 10px'; // 버튼 크기 조정
+        closeButton.style.padding = '3px 11px'; // 버튼 크기 조정
         closeButton.style.cursor = 'pointer';
         closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
         closeButton.style.transition = 'transform 0.2s'; // 버튼 확대 효과
