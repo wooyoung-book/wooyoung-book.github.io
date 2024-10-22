@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let linksAdded = false; // 링크 추가 여부 추적
     let existingIframe = null; // 기존 iframe 변수
     let highlightedLink = null; // 현재 하이라이트된 링크
-    let currentVideoId = ''; // 현재 비디오 ID 초기화
+    let videoId = ''; // 현재 비디오 ID 초기화
     
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } 
         
         if (musicDetails.open && currentVideoId) {
-            const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${currentVideoId}"]`);
+            const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
             // 드롭다운이 열릴 때 현재 비디오 ID에 따라 하이라이트와 iframe 설정
             if (linkToHighlight) {
                 highlightedLink = linkToHighlight;
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; // 확대 효과
                 highlightedLink.style.margin = 0;
 
-            const videoId = targetLink.getAttribute('data-video-id');
+            videoId = targetLink.getAttribute('data-video-id');
 
             // 비디오 ID 유효성 검사
             if (!videoId) {
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
             videoContainer.remove(); // 비디오 컨테이너 제거
             existingIframe = null; // 기존 iframe 변수 초기화
             highlightedLink = null; // 하이라이트된 링크 초기화
-            currentVideoId = ''; // 비디오 ID 초기화
+            videoId = ''; // 비디오 ID 초기화
         });
 
         closeButton.onmouseover = function() {
