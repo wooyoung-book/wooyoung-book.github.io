@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // URL 해시 변경 시 상태 반영
     window.addEventListener('popstate', function(event) {
         window.history.back();
+        window.history.back();
         if (history.state && history.state.videoId) {
             videoId = history.state.videoId;
             updateUIForVideo(videoId);
