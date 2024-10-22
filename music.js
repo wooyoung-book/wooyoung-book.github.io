@@ -1,14 +1,12 @@
-    let linksAdded = false; // 링크 추가 여부 추적
-    let existingIframe = null; // 기존 iframe 변수
-    let highlightedLink = null; // 현재 하이라이트된 링크
-    let videoId = ''; // 현재 비디오 ID 초기화
-
 document.addEventListener("DOMContentLoaded", function() {
     const musicContainer = document.getElementById('music-c');
     const musicDetails = document.getElementById('music-d');
     const musicEContainer = document.getElementById('music-e');
     
-
+    let linksAdded = false; // 링크 추가 여부 추적
+    let existingIframe = null; // 기존 iframe 변수
+    let highlightedLink = null; // 현재 하이라이트된 링크
+    let videoId = ''; // 현재 비디오 ID 초기화
     
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
