@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             // iframe src 업데이트
-            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1=${videoId}`; // 자동 재생 및 반복 재생 추가
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
         }
     });
 });
