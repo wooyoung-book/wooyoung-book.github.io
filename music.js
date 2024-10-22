@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 createVideoContainer();
             }
 
-            // iframe src 업데이트
-            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
+            // iframe src 업데이트 (두 번 클릭처럼 동작하게 설정)
+            setTimeout(() => {
+                existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
+            }, 50); // 50ms 지연
         }
     });
 
