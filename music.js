@@ -2,18 +2,26 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicContainer = document.getElementById('music-c');
     const musicDetails = document.getElementById('music-d');
     const musicEContainer = document.getElementById('music-e');
-    
+
     let linksAdded = false;
     let existingIframe = null;
     let highlightedLink = null;
     let videoId = '';
-    
+
     // 관련 정보 표시를 위한 요소
     const infoDisplay = document.createElement('div');
     infoDisplay.style.marginTop = '10px';
     infoDisplay.style.fontSize = '16px';
     musicEContainer.appendChild(infoDisplay);
-    
+
+    // URL 해시 변경 시 상태 반영
+    window.addEventListener('popstate', function(event) {
+        if (event.state) {
+            videoId = event.state.videoId;
+            updateUIForVideo(videoId);
+        }
+    });
+
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open) {
             if (!linksAdded) {
@@ -49,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // iframe 아래에 링크 정보 표시
                 updateInfoDisplay(currentVideoId, currentLabel);
+                
+                // 상태 변경 및 URL 해시 업데이트
+                history.pushState({ videoId }, '', `#${videoId}`);
             }
         }
     });
@@ -143,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
             removeHighlight(); // Clear highlight when closing
             videoId = '';
             infoDisplay.textContent = ''; // 정보 초기화
+            history.pushState(null, '', window.location.pathname); // 해시 초기화
         });
 
         closeButton.onmouseover = function() {
@@ -163,12 +175,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // iframe이 로드될 때마다 비디오 ID를 확인하여 하이라이트 및 정보 업데이트
-    existingIframe.addEventListener('load', function() {
-        if (videoId) {
-            const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
-            if (linkToHighlight) {
-                updateInfoDisplay(videoId, linkToHighlight.textContent);
+    // UI 업데이트 함수
+    function updateUIForVideo(videoId) {
+        if (highlightedLink) {
+            removeHighlight();
+        }
+        highlightedLink = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
+        if (highlightedLink) {
+            highlightLink(videoId);
+            updateInfoDisplay(videoId, highlightedLink.textContent);
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+        }
+    }
+
+    // 드롭다운 외부 클릭 처리
+    document.addEventListener('click', function(event) {
+        if (!musicDetails.contains(event.target)) {
+            // 드롭다운 외부 클릭 시 하이라이트 유지
+            if (highlightedLink) {
+                highlightLink(highlightedLink.getAttribute('data-video-id'));
             }
         }
     });
