@@ -20,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
             // 모든 링크를 원래 색으로 복원
             musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
                 link.classList.remove('highlight');
-                link.style.backgroundColor = '#FFFEBD'; // 원래 색
+                link.style.backgroundColor = '#e0e0e0'; // 원래 색
                 link.style.transform = 'scale(1)'; // 초기 크기
-                link.style.margin = '0'; // 클릭 시 마진 제거
             });
 
             // 클릭한 링크 하이라이트
             const targetLink = event.target;
             targetLink.classList.add('highlight');
-            targetLink.style.backgroundColor = '#6A1B9A'; // 새로운 하이라이트 색상
+            targetLink.style.backgroundColor = '#9e9e9e'; // 새로운 하이라이트 색상
             targetLink.style.transform = 'scale(1.05)'; // 확대 효과
-            targetLink.style.margin = '0'; // 클릭 시 마진 제거
 
             const videoId = targetLink.getAttribute('data-video-id');
 
@@ -45,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 createVideoContainer();
             }
 
-            // iframe src 업데이트
-            existingIframe.src = '';
-            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
+            // 기존 iframe src를 빈 문자열로 설정 후 다시 설정
+            existingIframe.src = ''; // 비워서 초기화
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 새로운 src 설정
         }
     });
 
@@ -74,16 +72,18 @@ document.addEventListener("DOMContentLoaded", function() {
                    data-video-id="${link.id}" 
                    style="
                        display: block; 
-                       padding: 6px 10px; 
-                       background-color: #FFFEBD; 
+                       padding: 10px 15px; 
+                       background-color: #e0e0e0; 
                        color: #333; 
                        text-decoration: none; 
-                       border: 1px solid transparent; 
+                       border: 1px solid #bbb; 
+                       border-radius: 4px; 
                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px; 
-                       margin: 0; /* 기본 마진 제거 */
-                   ">
+                   "
+                   onmouseover="this.style.backgroundColor='#9e9e9e'; this.style.transform='scale(1.05)';"
+                   onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.transform='scale(1)';">
                     ${link.label}
                 </a>
             </div>
@@ -114,14 +114,23 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.style.backgroundColor = '#FF6347'; // 버튼 배경 색상
         closeButton.style.color = 'white'; // 버튼 글자 색상
         closeButton.style.border = 'none';
-        closeButton.style.padding = '3px 10px'; // 버튼 크기 조정
+        closeButton.style.borderRadius = '4px'; // 모서리 둥글게
+        closeButton.style.padding = '5px 10px'; // 버튼 크기 조정
         closeButton.style.cursor = 'pointer';
         closeButton.style.zIndex = '10'; // 버튼이 비디오 위에 보이도록
+        closeButton.style.transition = 'transform 0.2s'; // 버튼 확대 효과
 
         closeButton.addEventListener('click', function() {
             videoContainer.remove(); // 비디오 컨테이너 제거
             existingIframe = null; // 기존 iframe 변수 초기화
         });
+
+        closeButton.onmouseover = function() {
+            this.style.transform = 'scale(1.1)'; // 확대 효과
+        };
+        closeButton.onmouseout = function() {
+            this.style.transform = 'scale(1)'; // 원래 크기로 복원
+        };
 
         videoContainer.appendChild(closeButton); // 비디오 컨테이너에 버튼 추가
         musicEContainer.appendChild(videoContainer); // 음악 컨테이너에 비디오 추가
