@@ -11,18 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 관련 정보 표시를 위한 요소
     const infoDisplay = document.createElement('div');
-    infoDisplay.style.marginTop = '10px';
-    infoDisplay.style.fontSize = '16px';
+    infoDisplay.style.marginTop = '0px';
+    infoDisplay.style.fontSize = '14px';
     musicEContainer.appendChild(infoDisplay);
 
     // URL 해시 변경 시 상태 반영
     window.addEventListener('popstate', function(event) {
-        if (historyStack.length > 1) {
-            historyStack.pop(); // 현재 상태 제거
-            videoId = historyStack[historyStack.length - 1]; // 이전 상태 가져오기
+        if (history.state && history.state.videoId) {
+            videoId = history.state.videoId;
             updateUIForVideo(videoId);
         } else {
-            // 히스토리 스택이 비어있는 경우 초기화
+            // 상태가 없으면 초기화
             removeHighlight();
             infoDisplay.textContent = '';
             videoId = '';
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 
                 // 상태 변경 및 URL 해시 업데이트
                 historyStack.push(videoId); // 히스토리 스택에 추가
-                history.pushState({}, '', `#${videoId}`);
+                history.pushState({ videoId }, '', `#${videoId}`);
             }
         }
     });
@@ -79,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             linkToHighlight.style.backgroundColor = '#98FF98'; 
             linkToHighlight.style.transform = 'scale(1.1) translateX(10px)'; 
             linkToHighlight.style.margin = 0;
+            linkToHighlight.style.padding-left = '10px';
         }
     }
 
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        border-bottom: 1px solid #000;
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
+                       padding-left: 10px;
                        cursor: pointer;">
                     ${link.label}
                 </a>
