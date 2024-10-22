@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div style="margin-bottom: 2px;">
                 <a href="#" 
                    data-video-id="${link.id}" 
-                   style="color: black; text-decoration: none; background-color: #FFFEBD; padding-left: 1px;p padding-right: 1px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
+                   style="color: black; text-decoration: none; background-color: #FFFEBD; padding-left: 1px; padding-right: 1px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
                     ${link.label}
                 </a>
             </div>
