@@ -21,10 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // 이전 하이라이트 제거
             const highlightedLinks = musicContainer.querySelectorAll('.highlight');
-            highlightedLinks.forEach(link => link.classList.remove('highlight'));
-            highlightedLinks.forEach(link => link.style.backgroundColor = '#FFFEBD'); // 원래 색으로 복원
-            link.style.lineHeight = ''; // 기본 line-height 복원
-            link.style.padding = ''; // 기본 padding 복원
+            highlightedLinks.forEach(link => {
+                link.classList.remove('highlight');
+                link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
+                link.style.lineHeight = ''; // 기본 line-height 복원
+                link.style.padding = ''; // 기본 padding 복원
+            });
             
             // 클릭한 링크 하이라이트
             event.target.classList.add('highlight');
