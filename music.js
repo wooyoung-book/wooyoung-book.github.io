@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
             targetLink.classList.add('highlight');
             targetLink.style.backgroundColor = '#9e9e9e'; // 새로운 하이라이트 색상
             targetLink.style.transform = 'scale(1.05)'; // 확대 효과
+            targetLink.style.margin = 0;
 
             const videoId = targetLink.getAttribute('data-video-id');
 
@@ -72,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
                    data-video-id="${link.id}" 
                    style="
                        display: block; 
-                       padding: 10px 15px; 
+                       padding: 2px 10px; 
                        background-color: #e0e0e0; 
                        color: #333; 
                        text-decoration: none; 
