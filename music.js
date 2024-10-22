@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             linkToHighlight.style.backgroundColor = '#98FF98'; 
             linkToHighlight.style.transform = 'scale(1.1) translateX(10px)'; 
             linkToHighlight.style.margin = 0;
-            linkToHighlight.style.padding-left = '10px';
+            linkToHighlight.style.paddingLeft = '10px';
         }
     }
 
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        border-bottom: 1px solid #000;
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
-                       padding-left: 10px;
+                       paddingLeft: 10px;
                        cursor: pointer;">
                     ${link.label}
                 </a>
