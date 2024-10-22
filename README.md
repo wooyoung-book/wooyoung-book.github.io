@@ -10,8 +10,7 @@
 <div style="border-bottom: 0.5px solid;">
   <details id="music-d" class="content-details">
     <summary><b>Music(Ambient/Instrumental/...)</b></summary>
-    <div id="dropdown-menu" class="content" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; z-index: 1000; margin-top: 5px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-</div>
+    <span id="music-c" class="content" style="display:block;"></span>
   </details>
 </div>
 
