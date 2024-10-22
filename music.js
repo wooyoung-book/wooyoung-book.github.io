@@ -83,26 +83,28 @@ document.addEventListener("DOMContentLoaded", function() {
             { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
-        return links.map(link => `
-            <div style="margin: 0;">
-                <a href="#" 
-                   data-video-id="${link.id}" 
-                   style="
-                       display: block; 
-                       padding: 0;
-                       background-color: #fff;
-                       color: #000;
-                       text-decoration: none;
-                       border-bottom: 1px solid #000;
-                       transition: background-color 0.3s, transform 0.2s;
-                       font-size: 14px;
-                       cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';"
-                   onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1) translateX(0)';">
-                    ${link.label}
-                </a>
-            </div>
-        `).join('');
+        
+return links.map(link => `
+    <div style="margin: 0;">
+        <a href="#" 
+           data-video-id="${link.id}" 
+           style="
+               display: block; 
+               padding: 0;
+               background-color: #fff;
+               color: #000;
+               text-decoration: none;
+               border-bottom: 1px solid #000;
+               transition: background-color 0.3s, transform 0.2s;
+               font-size: 14px;
+               cursor: pointer;"
+           onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1) translateX(10px)';"
+           onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1) translateX(0)';">
+            ${link.label}
+        </a>
+    </div>
+`).join('');
+        
     }
 
     function createVideoContainer() {
