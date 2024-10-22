@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
             highlightedLinks.forEach(link => {
                 link.classList.remove('highlight');
                 link.style.backgroundColor = '#FFFEBD'; // 원래 색으로 복원
-                link.style.lineHeight = 'normal'; // 기본 line-height 복원
-                link.style.padding = '0 5px';
-                link.style.margin = '0';
+                link.style.transform = 'scale(1)';
             });
 
             // 클릭한 링크 하이라이트
             event.target.classList.add('highlight');
             event.target.style.backgroundColor = '#FFD700'; // 하이라이트 색상
+            event.target.style.transform = 'scale(1.1)'; // 확대 효과
+            event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
             event.target.style.lineHeight = 'normal'; // 원하는 line-height 설정
             event.target.style.padding = '0 5px'; // 필요한 경우 패딩 설정
             event.target.style.margin = '0'; // 필요한 경우 마진 설정
