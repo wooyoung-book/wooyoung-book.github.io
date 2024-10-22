@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetLink = event.target;
             targetLink.classList.add('highlight');
             targetLink.style.backgroundColor = '#f0f0f0'; // 새로운 하이라이트 색상
-            targetLink.style.transform = 'scale(1.05)'; // 확대 효과
+            targetLink.style.transform = 'scale(1.1)'; // 확대 효과
             targetLink.style.margin = 0;
 
             const videoId = targetLink.getAttribute('data-video-id');
@@ -73,15 +73,15 @@ document.addEventListener("DOMContentLoaded", function() {
                    data-video-id="${link.id}" 
                    style="
                        display: block; 
-                       padding: 0 10px; 
-                       background-color: #fff; 
+                       padding: 0 15px; 
+                       background-color: #fff;
+                       color: #000;
                        text-decoration: none; 
-                       border-top: 1px solid #000;
                        border-bottom: 1px solid #000;
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
                        cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.05)';"
+                   onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)';"
                    onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1)';">
                     ${link.label}
                 </a>
