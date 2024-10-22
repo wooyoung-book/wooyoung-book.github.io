@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicDetails = document.getElementById('music-d');
     const musicEContainer = document.getElementById('music-e');
     
-    let linksAdded = false; // 링크 추가 여부
+    let linksAdded = false; // 링크 추가 여부 추적
     let existingIframe = null; // 기존 iframe 변수
 
     musicDetails.addEventListener('toggle', function() {
@@ -17,8 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     musicContainer.addEventListener('click', function(event) {
         if (event.target.matches('a[data-video-id]')) {
-            event.preventDefault(); // 클릭 동작 방지
+            event.preventDefault(); // 기본 링크 클릭 동작 방지
             
+            // 이전 하이라이트 제거
+            const highlightedLinks = musicContainer.querySelectorAll('.highlight');
+            highlightedLinks.forEach(link => link.classList.remove('highlight'));
+
+            // 클릭한 링크 하이라이트
+            event.target.classList.add('highlight');
+
+            // 인라인 스타일 추가
+            event.target.style.backgroundColor = '#FFD700'; // 클릭 시 하이라이트 색상
+
             const videoId = event.target.getAttribute('data-video-id');
 
             // 비디오 ID 유효성 검사
@@ -40,28 +50,37 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function createLinksHTML() {
-        return `
-            <a href="#" data-video-id="pkbXucb7mtA" aria-label="Bola - Para Qweqway">Bola - Para Qweqway</a><br>
-            <a href="#" data-video-id="d_34u3yowvE" aria-label="Sounds From The Ground - This Land">Sounds From The Ground - This Land</a><br>
-            <a href="#" data-video-id="RgmufUgVmi8" aria-label="Shadowy Men On A Shadowy Planet - Zombie Compromise">Shadowy Men On A Shadowy Planet - Zombie Compromise</a><br>
-            <a href="#" data-video-id="mmCnQDUSO4I" aria-label="Dmitri Shostakovich - Waltz No. 2">Dmitri Shostakovich - Waltz No. 2</a><br>
-            <a href="#" data-video-id="0VpQi7EOEDg" aria-label="Drakphaser - Phasius Earth">Drakphaser - Phasius Earth</a><br>
-            <a href="#" data-video-id="oAN_UVHtCro" aria-label="Dalot - Infinite Window">Dalot - Infinite Window</a><br>
-            <a href="#" data-video-id="hxdfiHGrcCA" aria-label="winterlight - Between Joy">winterlight - Between Joy</a><br>
-            <a href="#" data-video-id="ZCDAszFV-7U" aria-label="Damjan Mravunac - False God">Damjan Mravunac - False God</a><br>
-            <a href="#" data-video-id="QMV3A65PTG0" aria-label="S1gns of L1fe - Synesthetic State">S1gns of L1fe - Synesthetic State</a><br>
-            <a href="#" data-video-id="HhmHj1Wn5s4" aria-label="Dav Dralleon - Sword Ov Saturn">Dav Dralleon - Sword Ov Saturn</a><br>
-            <a href="#" data-video-id="Q13-FiOJvFk" aria-label="Quench - Slick">Quench - Slick</a><br>
-            <a href="#" data-video-id="Jydilwi-ric" aria-label="Rechenzentrum - Happy End">Rechenzentrum - Happy End</a><br>
-            <a href="#" data-video-id="w9sSkEWbopA" aria-label="Sense - Walking Water">Sense - Walking Water</a>
-        `;
+        const links = [
+            { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
+            { id: "d_34u3yowvE", label: "Sounds From The Ground - This Land" },
+            { id: "RgmufUgVmi8", label: "Shadowy Men On A Shadowy Planet - Zombie Compromise" },
+            { id: "mmCnQDUSO4I", label: "Dmitri Shostakovich - Waltz No. 2" },
+            { id: "0VpQi7EOEDg", label: "Drakphaser - Phasius Earth" },
+            { id: "oAN_UVHtCro", label: "Dalot - Infinite Window" },
+            { id: "hxdfiHGrcCA", label: "winterlight - Between Joy" },
+            { id: "ZCDAszFV-7U", label: "Damjan Mravunac - False God" },
+            { id: "QMV3A65PTG0", label: "S1gns of L1fe - Synesthetic State" },
+            { id: "HhmHj1Wn5s4", label: "Dav Dralleon - Sword Ov Saturn" },
+            { id: "Q13-FiOJvFk", label: "Quench - Slick" },
+            { id: "Jydilwi-ric", label: "Rechenzentrum - Happy End" },
+            { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
+        ];
+
+        return links.map(link => `
+            <a href="#" 
+               data-video-id="${link.id}" 
+               style="color: black; text-decoration: none; background-color: #FFFEBD; padding: 5px 10px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;"
+               aria-label="${link.label}">
+                ${link.label}
+            </a><br>
+        `).join('');
     }
 
     function createVideoContainer() {
         const videoContainer = document.createElement('div');
         videoContainer.style.position = 'relative';
-        videoContainer.style.width = '320px'; // 컨테이너 너비
-        videoContainer.style.height = '180px'; // 컨테이너 높이
+        videoContainer.style.width = '320px'; // 비디오 크기 조정
+        videoContainer.style.height = '180px'; // 비율 맞추기
         videoContainer.style.marginTop = '10px'; // 위쪽 여백 추가
 
         existingIframe = document.createElement('iframe');
