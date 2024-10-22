@@ -63,19 +63,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createLinksHTML() {
         const links = [
-            { id: "pkbXucb7mtA", label: `Bola - Para Qweqway` },
-            { id: "d_34u3yowvE", label: `Sounds From The Ground - This Land` },
-            { id: "RgmufUgVmi8", label: `Shadowy Men - Zombie Compromise` },
-            { id: "mmCnQDUSO4I", label: `Shostakovich - Waltz No. 2` },
-            { id: "0VpQi7EOEDg", label: `Drakphaser - Phasius Earth` },
-            { id: "oAN_UVHtCro", label: `Dalot - Infinite Window` },
-            { id: "hxdfiHGrcCA", label: `winterlight - Between Joy` },
-            { id: "ZCDAszFV-7U", label: `Damjan Mravunac - False God` },
-            { id: "QMV3A65PTG0", label: `S1gns of L1fe - Synesthetic State` },
-            { id: "HhmHj1Wn5s4", label: `Dav Dralleon - Sword Ov Saturn` },
-            { id: "Q13-FiOJvFk", label: `Quench - Slick` },
-            { id: "Jydilwi-ric", label: `Rechenzentrum - Happy End` },
-            { id: "w9sSkEWbopA", label: `Sense - Walking Water` },
+            { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
+            { id: "d_34u3yowvE", label: "Sounds From The Ground - This Land" },
+            { id: "RgmufUgVmi8", label: "Shadowy Men - Zombie Compromise" },
+            { id: "mmCnQDUSO4I", label: "Shostakovich - Waltz No. 2" },
+            { id: "0VpQi7EOEDg", label: "Drakphaser - Phasius Earth" },
+            { id: "oAN_UVHtCro", label: "Dalot - Infinite Window" },
+            { id: "hxdfiHGrcCA", label: "winterlight - Between Joy" },
+            { id: "ZCDAszFV-7U", label: "Damjan Mravunac - False God" },
+            { id: "QMV3A65PTG0", label: "S1gns of L1fe - Synesthetic State" },
+            { id: "HhmHj1Wn5s4", label: "Dav Dralleon - Sword Ov Saturn" },
+            { id: "Q13-FiOJvFk", label: "Quench - Slick" },
+            { id: "Jydilwi-ric", label: "Rechenzentrum - Happy End" },
+            { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
         return links.map(link => `
