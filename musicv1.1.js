@@ -1,14 +1,23 @@
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const dropdownButton = document.getElementById('dropdown-button');
     const dropdownMenu = document.getElementById('dropdown-menu');
+
+    // Populate the dropdown menu with links from music.js
+    dropdownMenu.innerHTML = createLinksHTML();
 
     dropdownButton.addEventListener('click', function() {
         dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    // 링크 클릭 시 비디오 재생 코드 유지...
+    dropdownMenu.addEventListener('click', function(event) {
+        if (event.target.matches('a[data-video-id]')) {
+            event.preventDefault(); // 기본 링크 클릭 동작 방지
+            const videoId = event.target.getAttribute('data-video-id');
+            alert(`Selected Video ID: ${videoId}`); // 비디오 ID를 확인하기 위한 알림
+            dropdownMenu.style.display = 'none'; // 메뉴 숨기기
+        }
+    });
 });
 
 function createLinksHTML() {
@@ -31,18 +40,7 @@ function createLinksHTML() {
     return links.map(link => `
         <div style="margin: 5px; padding: 5px;">
             <a href="#" 
-               data-video-id="${link.id}" 
-               style="
-                   display: block; 
-                   padding: 10px; 
-                   background-color: #FFFEBD; 
-                   color: black; 
-                   text-decoration: none; 
-                   border-radius: 5px; 
-                   transition: background-color 0.3s;
-               "
-               onmouseover="this.style.backgroundColor='#FFD700';"
-               onmouseout="this.style.backgroundColor='#FFFEBD';">
+               data-video-id="${link.id}">
                 ${link.label}
             </a>
         </div>
