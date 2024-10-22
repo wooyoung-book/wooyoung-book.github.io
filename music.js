@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        border-radius: 4px; 
                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                        transition: background-color 0.3s, transform 0.2s;
-                       font-size: 14px;"
+                       font-size: 11px;"
                    onmouseover="this.style.backgroundColor='#FF5722'; this.style.transform='scale(1.05)';"
                    onmouseout="this.style.backgroundColor='#FF9800'; this.style.transform='scale(1)';">
                     ${link.label}
