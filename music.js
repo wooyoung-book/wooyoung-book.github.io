@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
-            // 링크 추가
-            const linksHTML = createLinksHTML();
-            musicContainer.innerHTML = linksHTML;
+            musicContainer.innerHTML = createLinksHTML();
             linksAdded = true; // 링크 추가 후 플래그 설정
         }
     });
@@ -18,28 +16,21 @@ document.addEventListener("DOMContentLoaded", function() {
     musicContainer.addEventListener('click', function(event) {
         if (event.target.matches('a[data-video-id]')) {
             event.preventDefault(); // 기본 링크 클릭 동작 방지
-            
-        // 모든 링크를 원래 색으로 복원
-        musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
-            link.classList.remove('highlight');
-            link.style.backgroundColor = '#FFFEBD'; // 원래 색
-            link.style.transform = 'scale(1)'; // 초기 크기
-        });
-            
-// 클릭한 링크 하이라이트
-event.target.classList.add('highlight');
-event.target.style.backgroundColor = '#FFC107'; // 세련된 색상
-event.target.style.border = '1px solid transparent'; // 외곽선 좌우 없애기
-event.target.style.transform = 'scale(1.05)'; // 약간의 확대 효과
-event.target.style.transition = 'transform 0.2s ease'; // 부드러운 전환
-event.target.style.lineHeight = 'normal';
-event.target.style.padding = '6px 10px'; // 패딩 설정 (기본 패딩과 동일하게)
-event.target.style.margin = '0'; // 마진 설정
-    }
-        
 
-            
-            const videoId = event.target.getAttribute('data-video-id');
+            // 모든 링크를 원래 색으로 복원
+            musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
+                link.classList.remove('highlight');
+                link.style.backgroundColor = '#FFFEBD'; // 원래 색
+                link.style.transform = 'scale(1)'; // 초기 크기
+            });
+
+            // 클릭한 링크 하이라이트
+            const targetLink = event.target;
+            targetLink.classList.add('highlight');
+            targetLink.style.backgroundColor = '#FFC107'; // 하이라이트 색상
+            targetLink.style.transform = 'scale(1.05)'; // 확대 효과
+
+            const videoId = targetLink.getAttribute('data-video-id');
 
             // 비디오 ID 유효성 검사
             if (!videoId) {
@@ -76,27 +67,27 @@ event.target.style.margin = '0'; // 마진 설정
             { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
-return links.map(link => `
-    <div style="margin: 0;">
-        <a href="#" 
-           data-video-id="${link.id}" 
-           style="
-               display: block; 
-               padding: 6px 10px; /* 패딩 줄이기 */
-               background-color: #FFFEBD; 
-               color: #333; 
-               text-decoration: none; 
-               border: 1px solid transparent; /* 좌우 외곽선 없애기 */
-               box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-               transition: background-color 0.3s, transform 0.2s;
-               font-size: 14px; /* 글자 크기 줄이기 */
-           "
-           onmouseover="this.style.backgroundColor='#FFC107'; this.style.border='1px solid transparent'; this.style.transform='scale(1.05)';"
-           onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.border='1px solid transparent'; this.style.transform='scale(1)';">
-            ${link.label}
-        </a>
-    </div>
-`).join('');
+        return links.map(link => `
+            <div style="margin: 0;">
+                <a href="#" 
+                   data-video-id="${link.id}" 
+                   style="
+                       display: block; 
+                       padding: 6px 10px; 
+                       background-color: #FFFEBD; 
+                       color: #333; 
+                       text-decoration: none; 
+                       border: 1px solid transparent; 
+                       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                       transition: background-color 0.3s, transform 0.2s;
+                       font-size: 14px; 
+                   "
+                   onmouseover="this.style.backgroundColor='#FFC107'; this.style.transform='scale(1.05)';"
+                   onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.transform='scale(1)';">
+                    ${link.label}
+                </a>
+            </div>
+        `).join('');
     }
 
     function createVideoContainer() {
@@ -112,7 +103,7 @@ return links.map(link => `
         existingIframe.frameBorder = "0";
         existingIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
         existingIframe.allowFullscreen = true;
-        existingIframe.loading="lazy";
+        existingIframe.loading = "lazy";
         videoContainer.appendChild(existingIframe); // 비디오 컨테이너에 iframe 추가
 
         const closeButton = document.createElement('button');
