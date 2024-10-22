@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
             // 모든 링크를 원래 색으로 복원
             musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
                 link.classList.remove('highlight');
-                link.style.backgroundColor = '#e0e0e0'; // 원래 색
+                link.style.backgroundColor = '#FF9800'; // 원래 색
                 link.style.transform = 'scale(1)'; // 초기 크기
             });
 
             // 클릭한 링크 하이라이트
             const targetLink = event.target;
             targetLink.classList.add('highlight');
-            targetLink.style.backgroundColor = '#9e9e9e'; // 새로운 하이라이트 색상
+            targetLink.style.backgroundColor = '#FF5722'; // 새로운 하이라이트 색상
             targetLink.style.transform = 'scale(1.05)'; // 확대 효과
             targetLink.style.margin = 0;
 
@@ -74,16 +74,16 @@ document.addEventListener("DOMContentLoaded", function() {
                    style="
                        display: block; 
                        padding: 2px 10px; 
-                       background-color: #e0e0e0; 
+                       background-color: #FF9800; 
                        color: #333; 
                        text-decoration: none; 
-                       border: 1px solid #bbb; 
+                       border: 1px solid #a0a0a0; 
                        border-radius: 4px; 
                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;"
-                   onmouseover="this.style.backgroundColor='#9e9e9e'; this.style.transform='scale(1.05)';"
-                   onmouseout="this.style.backgroundColor='#e0e0e0'; this.style.transform='scale(1)';">
+                   onmouseover="this.style.backgroundColor='#FF5722'; this.style.transform='scale(1.05)';"
+                   onmouseout="this.style.backgroundColor='#FF9800'; this.style.transform='scale(1)';">
                     ${link.label}
                 </a>
             </div>
