@@ -3,26 +3,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicDetails = document.getElementById('music-d');
     const musicEContainer = document.getElementById('music-e');
     
-    let linksAdded = false; // 링크 추가 여부 추적
-    let existingIframe = null; // 기존 iframe 변수
-    let highlightedLink = null; // 현재 하이라이트된 링크
-    let videoId = ''; // 현재 비디오 ID 초기화
+    let linksAdded = false;
+    let existingIframe = null;
+    let highlightedLink = null;
+    let videoId = '';
     
     musicDetails.addEventListener('toggle', function() {
         if (musicDetails.open && !linksAdded) {
             musicContainer.innerHTML = createLinksHTML();
-            linksAdded = true; // 링크 추가 후 플래그 설정
+            linksAdded = true;
             console.log("Links added to music container");
         } 
         
         if (musicDetails.open && videoId) {
-            const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
-            if (linkToHighlight) {
-                highlightedLink = linkToHighlight;
-                highlightedLink.classList.add('highlight');
-                highlightedLink.style.backgroundColor = '#98FF98'; 
-                highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; 
-            }
+            highlightLink(videoId);
         }
     });
 
@@ -31,22 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             const targetLink = event.target;
             if (highlightedLink !== targetLink) {
-                if (highlightedLink) {
-                    highlightedLink.classList.remove('highlight');
-                    highlightedLink.style.backgroundColor = '#fff'; 
-                    highlightedLink.style.transform = 'scale(1) translateX(0)';
-                }
-
+                removeHighlight();
                 highlightedLink = targetLink; 
-                highlightedLink.classList.add('highlight');
-                highlightedLink.style.backgroundColor = '#98FF98';
-                highlightedLink.style.transform = 'scale(1.1) translateX(10px)';
-
+                highlightLink(targetLink.getAttribute('data-video-id'));
                 videoId = targetLink.getAttribute('data-video-id');
-                if (!videoId) {
-                    alert("유효하지 않은 비디오 ID입니다.");
-                    return;
-                }
 
                 if (!existingIframe) {
                     createVideoContainer();
@@ -56,6 +38,24 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
+
+    function highlightLink(videoId) {
+        const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
+        if (linkToHighlight) {
+            highlightedLink = linkToHighlight;
+            highlightedLink.classList.add('highlight');
+            highlightedLink.style.backgroundColor = '#98FF98'; 
+            highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; 
+        }
+    }
+
+    function removeHighlight() {
+        if (highlightedLink) {
+            highlightedLink.classList.remove('highlight');
+            highlightedLink.style.backgroundColor = '#fff'; 
+            highlightedLink.style.transform = 'scale(1) translateX(0)';
+        }
+    }
 
     function createLinksHTML() {
         const links = [
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.addEventListener('click', function() {
             videoContainer.remove();
             existingIframe = null;
-            highlightedLink = null;
+            removeHighlight(); // Clear highlight when closing
             videoId = '';
         });
 
