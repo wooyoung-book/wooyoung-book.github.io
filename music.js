@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 클릭한 링크 하이라이트
             const targetLink = event.target;
             targetLink.classList.add('highlight');
-            targetLink.style.backgroundColor = '#f0f0f0'; // 새로운 하이라이트 색상
+            targetLink.style.backgroundColor = '#98FF98'; // 새로운 하이라이트 색상
             targetLink.style.transform = 'scale(1.1)'; // 확대 효과
             targetLink.style.margin = 0;
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createLinksHTML() {
         const links = [
-            { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
+            { id: "pkbXucb7mtA", label: "▶️ Bola - Para Qweqway" },
             { id: "d_34u3yowvE", label: "Sounds From The Ground - This Land" },
             { id: "RgmufUgVmi8", label: "Shadowy Men On A Shadowy Planet - Zombie Compromise" },
             { id: "mmCnQDUSO4I", label: "Dmitri Shostakovich - Waltz No. 2" },
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px;
                        cursor: pointer;"
-                   onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)';"
+                   onmouseover="this.style.backgroundColor='#98FF98'; this.style.transform='scale(1.1)';"
                    onmouseout="this.style.backgroundColor='#fff'; this.style.transform='scale(1)';">
                     ${link.label}
                 </a>
