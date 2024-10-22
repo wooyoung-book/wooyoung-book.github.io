@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const musicDetails = document.getElementById('music-d');
     const musicEContainer = document.getElementById('music-e');
     
-    let linksAdded = false; // 링크 추가 여부 추적
+    let linksAdded = false; // 링크 추가 여부
     let existingIframe = null; // 기존 iframe 변수
 
     musicDetails.addEventListener('toggle', function() {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     musicContainer.addEventListener('click', function(event) {
         if (event.target.matches('a[data-video-id]')) {
-            event.preventDefault(); // 기본 링크 클릭 동작 방지
+            event.preventDefault(); // 클릭 동작 방지
             
             const videoId = event.target.getAttribute('data-video-id');
 
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function createVideoContainer() {
         const videoContainer = document.createElement('div');
         videoContainer.style.position = 'relative';
-        videoContainer.style.width = '320px'; // 비디오 크기 조정
-        videoContainer.style.height = '180px'; // 비율 맞추기
+        videoContainer.style.width = '320px'; // 컨테이너 너비
+        videoContainer.style.height = '180px'; // 컨테이너 높이
         videoContainer.style.marginTop = '10px'; // 위쪽 여백 추가
 
         existingIframe = document.createElement('iframe');
