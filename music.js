@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // 비디오가 로드되지 않을 경우 오류 처리
             existingIframe.onerror = function() {
-                alert("비디오를 로드하는 데 문제가 발생했습니다. 다른 비디오를 선택해 보세요.");
+                alert("로드하는 데 문제가 발생했습니다. 다른 비디오를 선택해 보세요.");
             };
         }
     });
