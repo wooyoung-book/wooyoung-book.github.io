@@ -29,6 +29,6 @@
 </div>
 
 <script src="load.js" defer></script>
-<script src="musicv1.1.js" defer></script>
+<script src="music.js" defer></script>
 
 
