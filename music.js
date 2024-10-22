@@ -10,19 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
         if (musicDetails.open && !linksAdded) {
             // 링크 추가
             const linksHTML = `
-                <a href="#" data-video-id="pkbXucb7mtA" style="color: black; text-decoration: none; background-color: #FFFEBD;">Bola - Para Qweqway</a><br>
-                <a href="#" data-video-id="d_34u3yowvE" style="color: black; text-decoration: none; background-color: #FFFEBD;">Sounds From The Ground - This Land</a><br>
-                <a href="#" data-video-id="RgmufUgVmi8" style="color: black; text-decoration: none; background-color: #FFFEBD;">Shadowy Men On A Shadowy Planet - Zombie Compromise</a><br>
-                <a href="#" data-video-id="mmCnQDUSO4I" style="color: black; text-decoration: none; background-color: #FFFEBD;">Dmitri Shostakovich - Waltz No. 2</a><br>
-                <a href="#" data-video-id="0VpQi7EOEDg" style="color: black; text-decoration: none; background-color: #FFFEBD;">Drakphaser - Phasius Earth</a><br>
-                <a href="#" data-video-id="oAN_UVHtCro" style="color: black; text-decoration: none; background-color: #FFFEBD;">Dalot - Infinite Window</a><br>
-                <a href="#" data-video-id="hxdfiHGrcCA" style="color: black; text-decoration: none; background-color: #FFFEBD;">winterlight - Between Joy</a><br>
-                <a href="#" data-video-id="ZCDAszFV-7U" style="color: black; text-decoration: none; background-color: #FFFEBD;">Damjan Mravunac - False God</a><br>
-                <a href="#" data-video-id="QMV3A65PTG0" style="color: black; text-decoration: none; background-color: #FFFEBD;">S1gns of L1fe - Synesthetic State</a><br>
-                <a href="#" data-video-id="HhmHj1Wn5s4" style="color: black; text-decoration: none; background-color: #FFFEBD;">Dav Dralleon - Sword Ov Saturn</a><br>
-                <a href="#" data-video-id="Q13-FiOJvFk" style="color: black; text-decoration: none; background-color: #FFFEBD;">Quench - Slick</a><br>
-                <a href="#" data-video-id="Jydilwi-ric" style="color: black; text-decoration: none; background-color: #FFFEBD;">Rechenzentrum - Happy End</a><br>
-                <a href="#" data-video-id="w9sSkEWbopA" style="color: black; text-decoration: none; background-color: #FFFEBD;">Sense - Walking Water</a>
+                <a href="#" data-video-id="pkbXucb7mtA" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Bola - Para Qweqway">Bola - Para Qweqway</a><br>
+                <a href="#" data-video-id="d_34u3yowvE" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Sounds From The Ground - This Land">Sounds From The Ground - This Land</a><br>
+                <a href="#" data-video-id="RgmufUgVmi8" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Shadowy Men On A Shadowy Planet - Zombie Compromise">Shadowy Men On A Shadowy Planet - Zombie Compromise</a><br>
+                <a href="#" data-video-id="mmCnQDUSO4I" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Dmitri Shostakovich - Waltz No. 2">Dmitri Shostakovich - Waltz No. 2</a><br>
+                <a href="#" data-video-id="0VpQi7EOEDg" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Drakphaser - Phasius Earth">Drakphaser - Phasius Earth</a><br>
+                <a href="#" data-video-id="oAN_UVHtCro" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Dalot - Infinite Window">Dalot - Infinite Window</a><br>
+                <a href="#" data-video-id="hxdfiHGrcCA" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="winterlight - Between Joy">winterlight - Between Joy</a><br>
+                <a href="#" data-video-id="ZCDAszFV-7U" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Damjan Mravunac - False God">Damjan Mravunac - False God</a><br>
+                <a href="#" data-video-id="QMV3A65PTG0" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="S1gns of L1fe - Synesthetic State">S1gns of L1fe - Synesthetic State</a><br>
+                <a href="#" data-video-id="HhmHj1Wn5s4" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Dav Dralleon - Sword Ov Saturn">Dav Dralleon - Sword Ov Saturn</a><br>
+                <a href="#" data-video-id="Q13-FiOJvFk" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Quench - Slick">Quench - Slick</a><br>
+                <a href="#" data-video-id="Jydilwi-ric" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Rechenzentrum - Happy End">Rechenzentrum - Happy End</a><br>
+                <a href="#" data-video-id="w9sSkEWbopA" style="color: black; text-decoration: none; background-color: #FFFEBD;" aria-label="Sense - Walking Water">Sense - Walking Water</a>
             `;
             musicContainer.innerHTML = linksHTML;
             linksAdded = true; // 링크 추가 후 플래그 설정
@@ -75,6 +75,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // iframe src 업데이트
             existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
+            
+            // 비디오가 로드되지 않을 경우 오류 처리
+            existingIframe.onerror = function() {
+                alert("비디오를 로드하는 데 문제가 발생했습니다. 다른 비디오를 선택해 보세요.");
+            };
         }
     });
 });
