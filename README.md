@@ -10,7 +10,7 @@
 <div style="border-bottom: 0.5px solid;">
   <details id="music-d" class="content-details">
     <summary><b>Music(Ambient/Instrumental/...)</b></summary>
-    <div id="music-c" class="content" style="overflow-y: scroll; height:300px; display:block"></div>
+    <span id="music-c" class="content" style="overflow-y: scroll; height:300px; display:block"></span>
   </details>
 </div>
 
