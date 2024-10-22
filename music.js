@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             event.target.classList.add('highlight');
             event.target.style.backgroundColor = '#FFD700'; // 하이라이트 색상
             event.target.style.lineHeight = 'normal'; // 원하는 line-height 설정
-            event.target.style.padding = '0'; // 불필요한 padding 제거
+            event.target.style.padding = '0 5px'; // 불필요한 padding 제거
             event.target.style.margin = '0'; // 마진 제거
             
             const videoId = event.target.getAttribute('data-video-id');
@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", function() {
         ];
 
         return links.map(link => `
-            <div style="margin-bottom: 2px;">
+            <div style="margin: 0;">
                 <a href="#" 
                    data-video-id="${link.id}" 
-                   style="color: black; text-decoration: none; background-color: #FFFEBD; padding-left: 1px; padding-right: 1px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
+                   style="color: black; text-decoration: none; background-color: #FFFEBD; padding: 0 5px; border-radius: 5px; display: inline-block; transition: background-color 0.3s ease;">
                     ${link.label}
                 </a>
             </div>
