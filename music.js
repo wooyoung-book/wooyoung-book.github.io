@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
         existingIframe.frameBorder = "0";
         existingIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
         existingIframe.allowFullscreen = true;
-        existingIframe.loading = "lazy";
         videoContainer.appendChild(existingIframe); // 비디오 컨테이너에 iframe 추가
 
         const closeButton = document.createElement('button');
