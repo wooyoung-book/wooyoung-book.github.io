@@ -22,13 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.classList.remove('highlight');
                 link.style.backgroundColor = '#FFFEBD'; // 원래 색
                 link.style.transform = 'scale(1)'; // 초기 크기
+                link.style.margin = '0'; // 클릭 시 마진 제거
             });
 
             // 클릭한 링크 하이라이트
             const targetLink = event.target;
             targetLink.classList.add('highlight');
-            targetLink.style.backgroundColor = '#FFC107'; // 하이라이트 색상
+            targetLink.style.backgroundColor = '#6A1B9A'; // 새로운 하이라이트 색상
             targetLink.style.transform = 'scale(1.05)'; // 확대 효과
+            targetLink.style.margin = '0'; // 클릭 시 마진 제거
 
             const videoId = targetLink.getAttribute('data-video-id');
 
@@ -43,10 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 createVideoContainer();
             }
 
-            // iframe src 업데이트 (두 번 클릭처럼 동작하게 설정)
-            setTimeout(() => {
-                existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
-            }, 50); // 50ms 지연
+            // iframe src 업데이트
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; // 자동 재생 및 반복 재생 추가
         }
     });
 
@@ -81,9 +81,8 @@ document.addEventListener("DOMContentLoaded", function() {
                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                        transition: background-color 0.3s, transform 0.2s;
                        font-size: 14px; 
-                   "
-                   onmouseover="this.style.backgroundColor='#FFC107'; this.style.transform='scale(1.05)';"
-                   onmouseout="this.style.backgroundColor='#FFFEBD'; this.style.transform='scale(1)';">
+                       margin: 0; /* 기본 마진 제거 */
+                   ">
                     ${link.label}
                 </a>
             </div>
