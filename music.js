@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                color: black; 
                                text-decoration: none; 
                                border-radius: 3px; 
+                               border: 1px solid #ccc; /* 외곽선 추가 */
                            "
                            onmouseover="this.style.backgroundColor='#FFD700';"
                            onmouseout="this.style.backgroundColor='#FFFEBD';">
