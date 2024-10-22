@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let existingIframe = null;
     let highlightedLink = null;
     let videoId = '';
-    let historyStack = []; // 이전 링크 기록 저장
     
     // 관련 정보 표시를 위한 요소
     const infoDisplay = document.createElement('div');
@@ -36,9 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const currentLabel = targetLink.textContent; // 링크 정보 저장
 
             if (highlightedLink !== targetLink) {
-                if (highlightedLink) {
-                    historyStack.push(highlightedLink.getAttribute('data-video-id')); // 이전 링크 기록
-                }
                 removeHighlight();
                 highlightedLink = targetLink;
                 highlightLink(currentVideoId);
@@ -51,24 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // iframe 아래에 링크 정보 표시
                 infoDisplay.textContent = `현재 재생 중: ${currentLabel}`;
-            }
-        }
-    });
-
-    // 뒤로가기 버튼
-    const backButton = document.createElement('button');
-    backButton.textContent = '뒤로가기';
-    backButton.style.marginTop = '10px';
-    backButton.style.padding = '5px 10px';
-    backButton.style.cursor = 'pointer';
-    musicEContainer.appendChild(backButton);
-
-    backButton.addEventListener('click', function() {
-        if (historyStack.length > 0) {
-            const previousVideoId = historyStack.pop();
-            const previousLink = musicContainer.querySelector(`a[data-video-id="${previousVideoId}"]`);
-            if (previousLink) {
-                previousLink.click(); // 이전 링크 클릭으로 처리
             }
         }
     });
@@ -160,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.addEventListener('click', function() {
             videoContainer.remove();
             existingIframe = null;
-            removeHighlight();
+            removeHighlight(); // Clear highlight when closing
             videoId = '';
             infoDisplay.textContent = ''; // 정보 초기화
         });
