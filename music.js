@@ -9,31 +9,32 @@ document.addEventListener("DOMContentLoaded", function() {
     let videoId = '';
     
     musicDetails.addEventListener('toggle', function() {
-        if (musicDetails.open && !linksAdded) {
-            musicContainer.innerHTML = createLinksHTML();
-            linksAdded = true;
-            console.log("Links added to music container");
-        } 
-        
-        if (musicDetails.open && videoId) {
-            highlightLink(videoId);
+        if (musicDetails.open) {
+            if (!linksAdded) {
+                musicContainer.innerHTML = createLinksHTML();
+                linksAdded = true;
+                console.log("Links added to music container");
+            }
+            if (videoId) {
+                highlightLink(videoId);
+            }
         }
     });
 
     musicContainer.addEventListener('click', function(event) {
-        if (event.target.matches('a[data-video-id]')) {
+        const targetLink = event.target.closest('a[data-video-id]');
+        if (targetLink) {
             event.preventDefault();
-            const targetLink = event.target;
+            const currentVideoId = targetLink.getAttribute('data-video-id');
             if (highlightedLink !== targetLink) {
                 removeHighlight();
-                highlightedLink = targetLink; 
-                highlightLink(targetLink.getAttribute('data-video-id'));
-                videoId = targetLink.getAttribute('data-video-id');
+                highlightedLink = targetLink;
+                highlightLink(currentVideoId);
+                videoId = currentVideoId;
 
                 if (!existingIframe) {
                     createVideoContainer();
                 }
-
                 existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`; 
             }
         }
@@ -42,10 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function highlightLink(videoId) {
         const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
         if (linkToHighlight) {
-            highlightedLink = linkToHighlight;
-            highlightedLink.classList.add('highlight');
-            highlightedLink.style.backgroundColor = '#98FF98'; 
-            highlightedLink.style.transform = 'scale(1.1) translateX(10px)'; 
+            linkToHighlight.classList.add('highlight');
+            linkToHighlight.style.backgroundColor = '#98FF98'; 
+            linkToHighlight.style.transform = 'scale(1.1) translateX(10px)'; 
         }
     }
 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         closeButton.addEventListener('click', function() {
             videoContainer.remove();
             existingIframe = null;
-            removeHighlight(); // Clear highlight when closing
+            removeHighlight();
             videoId = '';
         });
 
