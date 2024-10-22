@@ -25,9 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // 클릭한 링크 하이라이트
             event.target.classList.add('highlight');
-
-            // 인라인 스타일 추가
-            event.target.style.backgroundColor = '#FFD700'; // 클릭 시 하이라이트 색상
+            event.target.style.backgroundColor = '#FFD700'; // 하이라이트 색상
 
             const videoId = event.target.getAttribute('data-video-id');
 
