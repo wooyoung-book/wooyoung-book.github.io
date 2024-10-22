@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let videoId = ''; // 현재 비디오 ID 초기화
     
     musicDetails.addEventListener('toggle', function() {
-        musicContainer.innerHTML = createLinksHTML();
         if (musicDetails.open && !linksAdded) {
             musicContainer.innerHTML = createLinksHTML();
             linksAdded = true; // 링크 추가 후 플래그 설정
