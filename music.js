@@ -73,17 +73,24 @@ document.addEventListener("DOMContentLoaded", function() {
             { id: "w9sSkEWbopA", label: "Sense - Walking Water" },
         ];
 
-        return links.map(link => `
-        <div style="margin: 0; padding: 0;">
-                <a href="#" 
-                   data-video-id="${link.id}" 
-                   style="
-                       color: black; 
-                       line-height: 0;">
-                    ${link.label}
-                </a>
-            </div>
-        `).join('');
+            return links.map(link => `
+                    <div style="margin: 5px 0;">
+                        <a href="#" 
+                           data-video-id="${link.id}" 
+                           style="
+                               display: block; 
+                               padding: 8px; 
+                               background-color: #FFFEBD; 
+                               color: black; 
+                               text-decoration: none; 
+                               border-radius: 3px; 
+                           "
+                           onmouseover="this.style.backgroundColor='#FFD700';"
+                           onmouseout="this.style.backgroundColor='#FFFEBD';">
+                            ${link.label}
+                        </a>
+                    </div>
+                `).join('');
     }
 
     function createVideoContainer() {
