@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
                    data-video-id="${link.id}" 
                    style="
                        display: block; 
-                       padding: 0 5px; 
+                       padding: 0; 
                        background-color: #fff;
                        color: #000;
                        text-decoration: none; 
