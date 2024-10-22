@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ];
 
         return links.map(link => `
+        <div style="margin: 0; padding: 0;">
                 <a href="#" 
                    data-video-id="${link.id}" 
                    style="
@@ -87,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        transition: background-color 0.3s ease;">
                     ${link.label}
                 </a>
+            </div>
         `).join('');
     }
 
