@@ -36,7 +36,7 @@
             }
             .link {
                 display: block;
-                padding: 5px;
+                padding: 1px;
                 text-decoration: none;
                 color: #000;
                 border-bottom: 1px solid #ccc;
@@ -96,8 +96,7 @@
                         createVideoContainer();
                     }
                     existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
-                        
-                history.pushState({ videoId: currentVideoId }, '', window.location.pathname);
+
                 }
             });
 
@@ -113,21 +112,6 @@
                 `).join('');
             }
 
-                
-window.addEventListener('popstate', function(event) {
-    if (event.state && event.state.videoId) {
-        videoId = event.state.videoId;
-        if (existingIframe) {
-            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
-        }
-    } else {
-        // 기본 동작
-        videoId = '';
-        if (existingIframe) {
-            existingIframe.src = '';
-        }
-    }
-});
 
             function createVideoContainer() {
                 const videoContainer = document.createElement('div');
@@ -151,11 +135,15 @@ window.addEventListener('popstate', function(event) {
                     videoId = '';
                     musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
                         musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
-                    history.pushState(null, '', window.location.pathname);
-                        history.pushState(null, '', window.location.pathname); // 상태 초기화
                 });
 
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
+
+                window.addEventListener('popstate', function(event) {
+        if (existingIframe) {
+            closeButton.click();
+        }
+    } 
         });
