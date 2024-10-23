@@ -88,7 +88,7 @@
                 if (currentActiveLink) {
                     currentActiveLink.style.display = 'none';  // 현재 항목 숨기기
                 }
-                    });
+        });
 
             musicContainer.addEventListener('click', function(event) {
                 const targetLink = event.target.closest('a[data-video-id]');
