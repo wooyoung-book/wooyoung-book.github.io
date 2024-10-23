@@ -52,7 +52,7 @@
             let linksAdded = false;
             let existingIframe = null;
         let currentActiveLink = null;
-                
+
             const links = [
                 { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
                 { id: "d_34u3yowvE", label: "Sounds From The Ground - This Land" },
@@ -131,6 +131,7 @@
         function closeVideo() {
                     videoContainer.remove();
                     existingIframe = null;
+                existingIframe.src = '';
                     musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
                 musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
         }
