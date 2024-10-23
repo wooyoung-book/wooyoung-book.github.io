@@ -105,7 +105,12 @@
                             if (existingIframe) {
                                 const currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
                                     
-                                musicDetails.querySelector('summary').textContent = `현재 플레이: ${currvideoId}`; // test
+                                const result = confirm(currvideoId);
+                                if (result) {
+                                    console.log('사용자가 확인했습니다.');
+                                } else {
+                                    console.log('사용자가 취소했습니다.');
+                                }
                                     
                                 if (currvideoId !== videoId) {
                                     closeVideo(); // 기존 iframe 닫기
