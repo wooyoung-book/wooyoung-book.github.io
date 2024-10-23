@@ -48,7 +48,7 @@
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
-
+                const videoContainer = null;
             let linksAdded = false;
             let existingIframe = null;
             let videoId = '';
@@ -104,7 +104,9 @@
                         // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
                             if (existingIframe) {
                                 const currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
-
+                                    
+                                musicDetails.querySelector('summary').textContent = `현재 플레이: ${currvideoId}`; // test
+                                    
                                 if (currvideoId !== videoId) {
                                     closeVideo(); // 기존 iframe 닫기
                                 }
@@ -140,7 +142,7 @@
                 `).join('');
             }
 
-                function closeVideo() {
+        function closeVideo() {
                     videoContainer.remove();
                     existingIframe = null;
                     videoId = '';
@@ -149,7 +151,9 @@
         }
                 
             function createVideoContainer() {
-                const videoContainer = document.createElement('div');
+                videoContainer = document.createElement('div');
+
+                    
                 videoContainer.className = 'video-container';
 
                 existingIframe = document.createElement('iframe');
