@@ -24,13 +24,12 @@
             }
             #music-c {
                 text-align: center; /* 링크 중앙 정렬 */
-                margin-top: 60px; /* 제목의 높이만큼 여백 추가 */
                 cursor: pointer;
             }
 
-            #music-d {
-              position: relative; /* 드롭다운의 상대적 위치 */
-             }
+            // #music-d {
+             // position: relative; /* 드롭다운의 상대적 위치 */
+            // }
          
             #music-d summary {
                         position: fixed; /* 고정 위치로 설정 */
