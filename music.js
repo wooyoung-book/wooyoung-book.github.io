@@ -101,9 +101,9 @@
                         createVideoContainer();
                     }
                         
-   // existingIframe.(this.contentWindow || this.documentWindow).location.replace(`https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`);
+   existingIframe.(this.contentWindow || this.documentWindow).location.replace(`https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`);
 
-                    existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+                   // existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
 
                      // 현재 진행 중인 항목 업데이트
                  currentActiveLink = targetLink;
