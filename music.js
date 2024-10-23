@@ -94,14 +94,22 @@
                 const targetLink = event.target.closest('a[data-video-id]');
                 if (targetLink) {
                     event.preventDefault();
-                    const currentVideoId = targetLink.getAttribute('data-video-id');
-                    videoId = currentVideoId;
+                    videoId = targetLink.getAttribute('data-video-id');
 
                     musicDetails.querySelector('summary').textContent = `현재 플레이: ${targetLink.textContent}`;
                         musicDetails.querySelector('summary').classList.add('bold');
                     // 드롭다운 제목 하이라이트
                     musicDetails.querySelector('summary').style.backgroundColor = '#98FF98';
+                        
+                        // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
+                            if (existingIframe) {
+                                const currentSrc = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
+                                const newSrc = `https://www.youtube.com/embed/${videoId}`; // 새로운 src
 
+                                if (currentSrc !== newSrc) {
+                                    closeVideo(); // 기존 iframe 닫기
+                                }
+                            }
                     if (!existingIframe) {
                         createVideoContainer();
                     }
@@ -133,7 +141,14 @@
                 `).join('');
             }
 
-
+                function closeVideo() {
+                    videoContainer.remove();
+                    existingIframe = null;
+                    videoId = '';
+                    musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
+                musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
+        }
+                
             function createVideoContainer() {
                 const videoContainer = document.createElement('div');
                 videoContainer.className = 'video-container';
@@ -151,23 +166,11 @@
                 closeButton.className = 'close-button';
 
                 closeButton.addEventListener('click', function() {
-                    videoContainer.remove();
-                    existingIframe = null;
-                    videoId = '';
-                    musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
-                        musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
+                        closeVideo();
                 });
 
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
-document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'hidden') {
-        // 페이지가 숨겨질 때 iframe 닫기
-        if (existingIframe) {
-            closeButton.click();
-        }
-    }
-});
 
 });
