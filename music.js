@@ -6,6 +6,9 @@
                 font-family: Arial, sans-serif;
             }
             #music-c {
+                    display: flex;
+                        flex-direction: column;
+                        align-items: center; /* 중앙 정렬 */
                 cursor: pointer;
             }
 
