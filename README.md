@@ -1,3 +1,5 @@
+<script src="refresh.js"></script>
+
 <div id="music-e"></div>
 
 <div style="border-bottom: 0.5px solid;">
