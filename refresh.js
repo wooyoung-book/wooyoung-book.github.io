@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 캐시 무시하고 페이지 새로 고침
-    function reloadWithoutCache() {
-        window.location.reload(true);
-    }
-
     // 첫 시작 시 강제 새로 고침
     if (!window.location.search.includes('refreshed=true')) {
         // 새로 고침을 위해 URL에 쿼리 매개변수를 추가
-        window.location.href = window.location.href.split('?')[0] + '?refreshed=true';
-        // 캐시를 무시하고 새로 고침
-        reloadWithoutCache();
+        const newUrl = window.location.href.split('?')[0] + '?refreshed=true';
+        history.replaceState(null, '', newUrl); // URL 변경, 새로 고침하지 않음
+        // 페이지 새로 고침 (캐시 무시)
+        window.location.reload(true);
     }
 
     // 쿠키 삭제 함수
