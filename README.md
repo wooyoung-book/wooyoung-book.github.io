@@ -1,16 +1,16 @@
 <div id="music-e"></div>
 
 <div style="border-bottom: 0.5px solid;">
-  <details class="content-details" data-url="chess.html">
-    <summary><b>I hate chess.</b></summary>
-    <span class="content" style="display:block"></span>
+  <details id="music-d" class="content-details">
+    <summary><b>Music(Ambient/Instrumental/...)</b></summary>
+    <span id="music-c" class="content" style="overflow-y: scroll; height:300px; display:block"></span>
   </details>
 </div>
 
 <div style="border-bottom: 0.5px solid;">
-  <details id="music-d" class="content-details">
-    <summary><b>Music(Ambient/Instrumental/...)</b></summary>
-    <span id="music-c" class="content" style="overflow-y: scroll; height:300px; display:block"></span>
+  <details class="content-details" data-url="chess.html">
+    <summary><b>I hate chess.</b></summary>
+    <span class="content" style="display:block"></span>
   </details>
 </div>
 
