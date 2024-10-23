@@ -130,7 +130,7 @@
                     existingIframe = null;
                     videoId = '';
                     musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
-                        musicDetails.querySelector('summary').textContent = 'Select a video'; // 제목 복구
+                        musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
                     history.pushState(null, '', window.location.pathname);
                 });
 
