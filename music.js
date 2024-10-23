@@ -87,7 +87,7 @@
                     const currentVideoId = targetLink.getAttribute('data-video-id');
                     videoId = currentVideoId;
 
-                    musicDetails.querySelector('summary').textContent = targetLink.textContent;
+                    musicDetails.querySelector('summary').textContent = `현재 플레이: ${targetLink.textContent}`;
                         musicDetails.querySelector('summary').classList.add('bold');
                     // 드롭다운 제목 하이라이트
                     musicDetails.querySelector('summary').style.backgroundColor = '#98FF98';
