@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             removeHighlight();
             infoDisplay.textContent = '';
             videoId = '';
+            musicDetails.textContent = '곡 선택하기'; // 드롭다운 제목 초기화
         }
     });
 
@@ -64,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 // iframe 아래에 링크 정보 표시
                 updateInfoDisplay(currentVideoId, currentLabel);
                 
+                // 드롭다운 제목 업데이트
+                musicDetails.textContent = `현재 재생 중: ${currentLabel}`;
+
                 // 상태 변경 및 URL 해시 업데이트
                 historyStack.push(videoId); // 히스토리 스택에 추가
                 history.pushState({ videoId }, '', `#${videoId}`);
@@ -162,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
             removeHighlight(); // Clear highlight when closing
             videoId = '';
             infoDisplay.textContent = ''; // 정보 초기화
+            musicDetails.textContent = '곡 선택하기'; // 드롭다운 제목 초기화
             historyStack = []; // 히스토리 스택 초기화
             history.pushState(null, '', window.location.pathname); // 해시 초기화
         });
@@ -194,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
             highlightLink(videoId);
             updateInfoDisplay(videoId, highlightedLink.textContent);
             existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+            musicDetails.textContent = `현재 재생 중: ${highlightedLink.textContent}`; // 드롭다운 제목 업데이트
         }
     }
 
