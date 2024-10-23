@@ -45,6 +45,12 @@
         document.head.appendChild(style);
 
         document.addEventListener("DOMContentLoaded", function() {
+                  const savedVideoId = localStorage.getItem('currentVideoId');
+    if (savedVideoId) {
+        existingIframe.src = `https://www.youtube.com/embed/${savedVideoId}?autoplay=1&playlist=${savedVideoId}`;
+        // 적절한 UI 업데이트 코드 추가
+    }
+});
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
@@ -91,7 +97,7 @@
                 if (targetLink) {
                     event.preventDefault();
                     const videoId = targetLink.getAttribute('data-video-id');
-
+                                localStorage.setItem('currentVideoId', videoId); // 비디오 ID 저장
                     musicDetails.querySelector('summary').textContent = `현재 플레이: ${targetLink.textContent}`;
                         musicDetails.querySelector('summary').classList.add('bold');
                     // 드롭다운 제목 하이라이트
