@@ -161,11 +161,17 @@
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
-                window.onbeforeunload = function(event) {
-    // 경고 메시지
-    const message = '이 페이지를 떠나면 변경 사항이 저장되지 않을 수 있습니다.';
-    event.returnValue = message; // 크롬, 파이어폭스 등에서 기본 메시지를 표시
-    return message; // 오래된 브라우저에서 메시지를 표시
-};
+window.onpageshow = function(event) {
+    if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) {
+        // Back Forward Cache로 브라우저가 로딩될 경우 혹은 브라우저 뒤로가기 했을 경우
+        // 이벤트 추가하는 곳
+                   const result = confirm(currvideoId);
+                                if (result) {
+                                    console.log('사용자가 확인했습니다.');
+                                } else {
+                                    console.log('사용자가 취소했습니다.');
+                                }
+    }
+}
 
 });
