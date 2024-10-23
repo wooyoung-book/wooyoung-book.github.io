@@ -51,7 +51,6 @@
                 let videoContainer = null;
             let linksAdded = false;
             let existingIframe = null;
-            let videoId = '';
         let currentActiveLink = null;
                 
             const links = [
@@ -76,8 +75,6 @@
                         musicContainer.innerHTML = createLinksHTML(links);
                         linksAdded = true;
                     }
-                } else {
-                    videoId = '';
                 }
 
                 musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
@@ -93,7 +90,7 @@
                 const targetLink = event.target.closest('a[data-video-id]');
                 if (targetLink) {
                     event.preventDefault();
-                    videoId = targetLink.getAttribute('data-video-id');
+                    const videoId = targetLink.getAttribute('data-video-id');
 
                     musicDetails.querySelector('summary').textContent = `현재 플레이: ${targetLink.textContent}`;
                         musicDetails.querySelector('summary').classList.add('bold');
@@ -135,7 +132,6 @@
         function closeVideo() {
                     videoContainer.remove();
                     existingIframe = null;
-                    videoId = '';
                     musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
                 musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
         }
