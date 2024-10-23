@@ -101,7 +101,7 @@
                         createVideoContainer();
                     }
                         
-   existingIframe.(this.contentWindow || this.documentWindow).location.replace(`https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`);
+   (existingIframe.contentWindow || existingIframe.documentWindow).location.replace(`https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`);
 
                    // existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
 
