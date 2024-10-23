@@ -52,6 +52,7 @@
             let linksAdded = false;
             let existingIframe = null;
             let videoId = '';
+        let currentActiveLink = null;
 
             const links = [
                 { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
@@ -78,7 +79,16 @@
                 } else {
                     videoId = '';
                 }
-            });
+                const links = musicContainer.querySelectorAll('a[data-video-id]');
+                links.forEach(link => {
+                link.style.display = '';  // 모든 항목 보이기
+                });
+
+                // 현재 진행 중인 항목 숨기기
+                if (currentActiveLink) {
+                    currentActiveLink.style.display = 'none';  // 현재 항목 숨기기
+                }
+                    });
 
             musicContainer.addEventListener('click', function(event) {
                 const targetLink = event.target.closest('a[data-video-id]');
@@ -96,6 +106,18 @@
                         createVideoContainer();
                     }
                     existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+
+                     // 현재 진행 중인 항목 업데이트
+                        currentActiveLink = targetLink;
+
+                        // 모든 항목 보이게 하고 현재 진행 중인 항목 숨기기
+                        const links = musicContainer.querySelectorAll('a[data-video-id]');
+                        links.forEach(link => {
+                            link.style.display = ''; // 모든 항목 보이기
+                        });
+
+                        // 클릭한 항목 숨기기
+                        currentActiveLink.style.display = 'none';  // 해당 항목 숨기기
 
                 }
             });
