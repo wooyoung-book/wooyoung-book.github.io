@@ -140,10 +140,13 @@
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
-
-                window.addEventListener('popstate', function(event) {
+document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'hidden') {
+        // 페이지가 숨겨질 때 iframe 닫기
         if (existingIframe) {
             closeButton.click();
         }
-    });
+    }
+});
+
 });
