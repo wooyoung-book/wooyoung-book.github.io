@@ -145,5 +145,5 @@
         if (existingIframe) {
             closeButton.click();
         }
-    } 
-        });
+    });
+});
