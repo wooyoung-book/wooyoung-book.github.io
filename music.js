@@ -79,8 +79,8 @@
                 } else {
                     videoId = '';
                 }
-                const links = musicContainer.querySelectorAll('a[data-video-id]');
-                links.forEach(link => {
+
+                musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
                 link.style.display = '';  // 모든 항목 보이기
                 });
 
@@ -108,11 +108,10 @@
                     existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
 
                      // 현재 진행 중인 항목 업데이트
-                        currentActiveLink = targetLink;
+                 currentActiveLink = targetLink;
 
                         // 모든 항목 보이게 하고 현재 진행 중인 항목 숨기기
-                        const links = musicContainer.querySelectorAll('a[data-video-id]');
-                        links.forEach(link => {
+                        musicContainer.querySelectorAll('a[data-video-id]').forEach(link => {
                             link.style.display = ''; // 모든 항목 보이기
                         });
 
