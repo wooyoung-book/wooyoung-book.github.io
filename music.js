@@ -26,16 +26,18 @@
                 text-align: center; /* 링크 중앙 정렬 */
                 cursor: pointer;
             }
-
-            // #music-d {
-             // position: relative; /* 드롭다운의 상대적 위치 */
-            // }
+/*
+            #music-d {
+             position: relative; // 드롭다운의 상대적 위치
+             }
+             */
          
             #music-d summary {
-                        position: fixed; /* 고정 위치로 설정 */
-                        top: 0; /* 화면의 상단 */
-                        // z-index: 1000; 다른 요소 위에 오도록 설정
-                        // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 그림자 효과 
+                        position: fixed; // 고정 위치로 설정
+                        top: 0; // 화면의 상단
+                        /*
+                        z-index: 1000; // 다른 요소 위에 오도록 설정
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // 그림자 효과 */
                 }
                 
             #music-d summary.bold {
