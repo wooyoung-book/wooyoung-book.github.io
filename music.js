@@ -8,9 +8,7 @@
             #music-d {
                 cursor: pointer;
             }
-            #music-d[open] summary {
-                background-color: #98FF98; /* 하이라이트 색상 */
-            }
+
             #music-d summary.bold {
                     font-weight: bold;
                 }
@@ -98,6 +96,8 @@
                         createVideoContainer();
                     }
                     existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+                        
+                history.pushState({ videoId: currentVideoId }, '', window.location.pathname);
                 }
             });
 
@@ -112,6 +112,22 @@
                     </div>
                 `).join('');
             }
+
+                
+window.addEventListener('popstate', function(event) {
+    if (event.state && event.state.videoId) {
+        videoId = event.state.videoId;
+        if (existingIframe) {
+            existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+        }
+    } else {
+        // 기본 동작
+        videoId = '';
+        if (existingIframe) {
+            existingIframe.src = '';
+        }
+    }
+});
 
             function createVideoContainer() {
                 const videoContainer = document.createElement('div');
@@ -136,6 +152,7 @@
                     musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
                         musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
                     history.pushState(null, '', window.location.pathname);
+                        history.pushState(null, '', window.location.pathname); // 상태 초기화
                 });
 
                 videoContainer.appendChild(closeButton);
