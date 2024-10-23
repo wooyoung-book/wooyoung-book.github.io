@@ -45,6 +45,14 @@
         document.head.appendChild(style);
 
         document.addEventListener("DOMContentLoaded", function() {
+                        // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
+                            if (existingIframe) {
+                                let currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
+                                    
+                                if (currvideoId !== `https://www.youtube.com/embed/${videoId}`) {
+                                    closeVideo(); // 기존 iframe 닫기
+                                }
+                            }
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
@@ -53,7 +61,7 @@
             let existingIframe = null;
             let videoId = '';
         let currentActiveLink = null;
-
+                
             const links = [
                 { id: "pkbXucb7mtA", label: "Bola - Para Qweqway" },
                 { id: "d_34u3yowvE", label: "Sounds From The Ground - This Land" },
@@ -89,7 +97,6 @@
                     currentActiveLink.style.display = 'none';  // 현재 항목 숨기기
                 }
         });
-
             musicContainer.addEventListener('click', function(event) {
                 const targetLink = event.target.closest('a[data-video-id]');
                 if (targetLink) {
@@ -100,22 +107,8 @@
                         musicDetails.querySelector('summary').classList.add('bold');
                     // 드롭다운 제목 하이라이트
                     musicDetails.querySelector('summary').style.backgroundColor = '#98FF98';
-                        
-                        // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
-                            if (existingIframe) {
-                                const currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
-                                    
-                                const result = confirm(currvideoId);
-                                if (result) {
-                                    console.log('사용자가 확인했습니다.');
-                                } else {
-                                    console.log('사용자가 취소했습니다.');
-                                }
-                                    
-                                if (currvideoId !== videoId) {
-                                    closeVideo(); // 기존 iframe 닫기
-                                }
-                            }
+
+                
                     if (!existingIframe) {
                         createVideoContainer();
                     }
