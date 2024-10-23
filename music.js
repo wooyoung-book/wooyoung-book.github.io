@@ -5,7 +5,7 @@
             body {
                 font-family: Arial, sans-serif;
             }
-            #music-d {
+            #music-c {
                 cursor: pointer;
             }
 
@@ -17,7 +17,7 @@
                 position: relative;
                 width: 320px;
                 height: 180px;
-                margin-top: 10px;
+                margin-top: 0;
             }
             .close-button {
                 position: absolute;
@@ -35,7 +35,7 @@
                 transform: scale(1.1);
             }
             .link {
-                display: block;
+                display: inline-block;
                 padding: 1px;
                 text-decoration: none;
                 color: #000;
