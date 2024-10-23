@@ -1,4 +1,5 @@
- // CSS 스타일 인라인 추가
+
+        // CSS 스타일 인라인 추가
         const style = document.createElement('style');
         style.innerHTML = `
             body {
@@ -7,8 +8,8 @@
             #music-d {
                 cursor: pointer;
             }
-            .highlight {
-                background-color: #98FF98;
+            #music-d[open] summary {
+                background-color: #98FF98; /* 하이라이트 색상 */
             }
             .video-container {
                 position: relative;
@@ -48,7 +49,6 @@
 
             let linksAdded = false;
             let existingIframe = null;
-            let highlightedLink = null;
             let videoId = '';
 
             const links = [
@@ -74,7 +74,6 @@
                         linksAdded = true;
                     }
                 } else {
-                    removeHighlight();
                     videoId = '';
                 }
             });
@@ -84,35 +83,19 @@
                 if (targetLink) {
                     event.preventDefault();
                     const currentVideoId = targetLink.getAttribute('data-video-id');
+                    videoId = currentVideoId;
 
-                    if (highlightedLink !== targetLink) {
-                        removeHighlight();
-                        highlightedLink = targetLink;
-                        highlightLink(currentVideoId);
-                        videoId = currentVideoId;
+                    musicDetails.querySelector('summary').textContent = targetLink.textContent;
 
-                        if (!existingIframe) {
-                            createVideoContainer();
-                        }
-                        existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
+                    // 드롭다운 제목 하이라이트
+                    musicDetails.querySelector('summary').style.backgroundColor = '#98FF98';
 
-                        musicDetails.querySelector('summary').textContent = targetLink.textContent;
+                    if (!existingIframe) {
+                        createVideoContainer();
                     }
+                    existingIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playlist=${videoId}`;
                 }
             });
-
-            function highlightLink(videoId) {
-                const linkToHighlight = musicContainer.querySelector(`a[data-video-id="${videoId}"]`);
-                if (linkToHighlight) {
-                    linkToHighlight.classList.add('highlight');
-                }
-            }
-
-            function removeHighlight() {
-                if (highlightedLink) {
-                    highlightedLink.classList.remove('highlight');
-                }
-            }
 
             function createLinksHTML(links) {
                 return links.map(link => `
@@ -145,20 +128,12 @@
                 closeButton.addEventListener('click', function() {
                     videoContainer.remove();
                     existingIframe = null;
-                    removeHighlight();
                     videoId = '';
+                    musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
                     history.pushState(null, '', window.location.pathname);
                 });
 
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
-
-            document.addEventListener('click', function(event) {
-                if (!musicDetails.contains(event.target)) {
-                    if (highlightedLink) {
-                        highlightLink(highlightedLink.getAttribute('data-video-id'));
-                    }
-                }
-            });
         });
