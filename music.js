@@ -132,11 +132,16 @@
             }
 
         function closeVideo() {
-                    videoContainer.remove();
+                         if (videoContainer) {
+                        videoContainer.remove();
+                    }
                     existingIframe = null;
-                existingIframe.src = '';
-                    musicDetails.querySelector('summary').style.backgroundColor = ''; // 하이라이트 제거
-                musicDetails.querySelector('summary').textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
+
+                    // 드롭다운 제목 복구
+                    const summary = musicDetails.querySelector('summary');
+                    summary.classList.remove('bold');
+                    summary.style.backgroundColor = ''; // 하이라이트 제거
+                    summary.textContent = 'Music(Ambient/Instrumental/...)'; // 제목 복구
         }
 
             function createVideoContainer() {
