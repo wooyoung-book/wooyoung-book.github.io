@@ -161,5 +161,11 @@
                 videoContainer.appendChild(closeButton);
                 musicEContainer.appendChild(videoContainer);
             }
+                window.onbeforeunload = function(event) {
+    // 경고 메시지
+    const message = '이 페이지를 떠나면 변경 사항이 저장되지 않을 수 있습니다.';
+    event.returnValue = message; // 크롬, 파이어폭스 등에서 기본 메시지를 표시
+    return message; // 오래된 브라우저에서 메시지를 표시
+};
 
 });
