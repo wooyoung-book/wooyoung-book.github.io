@@ -103,10 +103,9 @@
                         
                         // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
                             if (existingIframe) {
-                                const currentSrc = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
-                                const newSrc = `https://www.youtube.com/embed/${videoId}`; // 새로운 src
+                                const currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
 
-                                if (currentSrc !== newSrc) {
+                                if (currvideoId !== videoId) {
                                     closeVideo(); // 기존 iframe 닫기
                                 }
                             }
