@@ -50,7 +50,6 @@
         existingIframe.src = `https://www.youtube.com/embed/${savedVideoId}?autoplay=1&playlist=${savedVideoId}`;
         // 적절한 UI 업데이트 코드 추가
     }
-});
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
