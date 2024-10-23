@@ -45,14 +45,6 @@
         document.head.appendChild(style);
 
         document.addEventListener("DOMContentLoaded", function() {
-                        // 비디오 ID가 다르면 기존 iframe을 닫고 새로운 비디오 열기
-                            if (existingIframe) {
-                                let currvideoId = existingIframe.src.split('?')[0]; // 현재 src에서 ID 추출
-                                    
-                                if (currvideoId !== `https://www.youtube.com/embed/${videoId}`) {
-                                    closeVideo(); // 기존 iframe 닫기
-                                }
-                            }
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
