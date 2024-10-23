@@ -6,9 +6,7 @@
                 font-family: Arial, sans-serif;
             }
             #music-c {
-                    display: flex;
-                        flex-direction: column;
-                        align-items: center; /* 중앙 정렬 */
+                text-align: center; /* 링크 중앙 정렬 */
                 cursor: pointer;
             }
 
@@ -38,7 +36,7 @@
                 transform: scale(1.1);
             }
             .link {
-                display: inline-block;
+                display: block;
                 padding: 1px;
                 text-decoration: none;
                 color: #000;
