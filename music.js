@@ -48,7 +48,7 @@
             const musicContainer = document.getElementById('music-c');
             const musicDetails = document.getElementById('music-d');
             const musicEContainer = document.getElementById('music-e');
-                const videoContainer = null;
+                let videoContainer = null;
             let linksAdded = false;
             let existingIframe = null;
             let videoId = '';
