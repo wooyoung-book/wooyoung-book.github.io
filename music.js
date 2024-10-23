@@ -11,6 +11,10 @@
             #music-d[open] summary {
                 background-color: #98FF98; /* 하이라이트 색상 */
             }
+            #music-d summary.bold {
+                    font-weight: bold;
+                }
+
             .video-container {
                 position: relative;
                 width: 320px;
@@ -86,7 +90,7 @@
                     videoId = currentVideoId;
 
                     musicDetails.querySelector('summary').textContent = targetLink.textContent;
-
+                        musicDetails.querySelector('summary').classList.add('bold');
                     // 드롭다운 제목 하이라이트
                     musicDetails.querySelector('summary').style.backgroundColor = '#98FF98';
 
